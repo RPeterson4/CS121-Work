@@ -1,5 +1,7 @@
 # Ross's Front Page
 
+DTK has made some changes and successfully pushed them.
+
 ### Some info about me
 
 ### An index to my assignments
