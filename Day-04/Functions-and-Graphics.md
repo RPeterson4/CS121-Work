@@ -1,4 +1,3 @@
-
 ```r
 countOdds <- function(z) {
     k <- 0
