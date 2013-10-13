@@ -4,6 +4,8 @@
 
 
 ```r
+
+load(file = "RossData.Rdata")
 reverse2 <- function(input) {
     input2 <- strsplit(input, split = character(0))
     input3 <- input2[[1]][nchar(input):1]
@@ -29,7 +31,7 @@ scramble("shadow")
 ```
 
 ```
-## [1] "wsadoh"
+## [1] "wahsod"
 ```
 
 ```r
@@ -37,7 +39,7 @@ scramble("shadow")
 ```
 
 ```
-## [1] "ohdaws"
+## [1] "odsahw"
 ```
 
 ```r

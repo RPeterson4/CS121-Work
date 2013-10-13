@@ -182,7 +182,9 @@ hljs.initHighlightingOnLoad();
 
 <h2>Reverser</h2>
 
-<pre><code class="r">reverse2 &lt;- function(input) {
+<pre><code class="r">
+load(file = &quot;RossData.Rdata&quot;)
+reverse2 &lt;- function(input) {
     input2 &lt;- strsplit(input, split = character(0))
     input3 &lt;- input2[[1]][nchar(input):1]
     return(paste(input3, collapse = &quot;&quot;))
@@ -204,13 +206,13 @@ scramble &lt;- function(input) {
 scramble(&quot;shadow&quot;)
 </code></pre>
 
-<pre><code>## [1] &quot;wsadoh&quot;
+<pre><code>## [1] &quot;wahsod&quot;
 </code></pre>
 
 <pre><code class="r">scramble(&quot;shadow&quot;)
 </code></pre>
 
-<pre><code>## [1] &quot;ohdaws&quot;
+<pre><code>## [1] &quot;odsahw&quot;
 </code></pre>
 
 <pre><code class="r">
