@@ -19,6 +19,20 @@ reverse2("shadow")
 
 ```r
 
+superreverse <- function(input) {
+    sapply(input, FUN = reverse2)
+}
+
+superreverse(c("string", "constant"))
+```
+
+```
+##     string   constant 
+##   "gnirts" "tnatsnoc"
+```
+
+```r
+
 scramble <- function(input) {
     input2 <- strsplit(input, split = character(0))
     input3 <- input2[[1]][sample(nchar(input):1)]
@@ -29,7 +43,7 @@ scramble("shadow")
 ```
 
 ```
-## [1] "wahsod"
+## [1] "aoswhd"
 ```
 
 ```r
@@ -37,7 +51,31 @@ scramble("shadow")
 ```
 
 ```
-## [1] "odsahw"
+## [1] "wsdhoa"
+```
+
+```r
+
+superscramble <- function(input) {
+    sapply(input, FUN = scramble)
+}
+
+superscramble(c("string", "constant"))
+```
+
+```
+##     string   constant 
+##   "rigsnt" "satcnton"
+```
+
+```r
+
+superscramble(c("string", "constant"))
+```
+
+```
+##     string   constant 
+##   "inrtsg" "toastncn"
 ```
 
 ```r
@@ -52,6 +90,20 @@ VowelBleeper("shadow")
 
 ```
 ## [1] "sh*d*w"
+```
+
+```r
+
+superVowelBleeper <- function(input) {
+    sapply(input, FUN = VowelBleeper)
+}
+
+superVowelBleeper(c("string", "constant"))
+```
+
+```
+##     string   constant 
+##   "str*ng" "c*nst*nt"
 ```
 
 ```r
@@ -73,6 +125,20 @@ L33t("shadow")
 
 ```r
 
+superL33t <- function(input) {
+    sapply(input, FUN = L33t)
+}
+
+superL33t(c("string", "constant"))
+```
+
+```
+##     string   constant 
+##   "5trin9" "c0n5tant"
+```
+
+```r
+
 cypher <- function(input) {
     supercypher <- chartr("abcdefghijklmnopqrstuvwxyz", "mnopqrstuvwxyzabcdefghijkl", 
         input)
@@ -84,5 +150,19 @@ cypher("shadow")
 
 ```
 ## [1] "etmpai"
+```
+
+```r
+
+cypher2 <- function(input) {
+    sapply(input, FUN = cypher)
+}
+
+cypher2(c("string", "constant"))
+```
+
+```
+##     string   constant 
+##   "efduzs" "oazefmzf"
 ```
 

@@ -182,8 +182,7 @@ hljs.initHighlightingOnLoad();
 
 <h2>Reverser</h2>
 
-<pre><code class="r">
-reverse2 &lt;- function(input) {
+<pre><code class="r">reverse2 &lt;- function(input) {
     input2 &lt;- strsplit(input, split = character(0))
     input3 &lt;- input2[[1]][nchar(input):1]
     return(paste(input3, collapse = &quot;&quot;))
@@ -196,6 +195,18 @@ reverse2(&quot;shadow&quot;)
 </code></pre>
 
 <pre><code class="r">
+superreverse &lt;- function(input) {
+    sapply(input, FUN = reverse2)
+}
+
+superreverse(c(&quot;string&quot;, &quot;constant&quot;))
+</code></pre>
+
+<pre><code>##     string   constant 
+##   &quot;gnirts&quot; &quot;tnatsnoc&quot;
+</code></pre>
+
+<pre><code class="r">
 scramble &lt;- function(input) {
     input2 &lt;- strsplit(input, split = character(0))
     input3 &lt;- input2[[1]][sample(nchar(input):1)]
@@ -205,13 +216,33 @@ scramble &lt;- function(input) {
 scramble(&quot;shadow&quot;)
 </code></pre>
 
-<pre><code>## [1] &quot;wahsod&quot;
+<pre><code>## [1] &quot;aoswhd&quot;
 </code></pre>
 
 <pre><code class="r">scramble(&quot;shadow&quot;)
 </code></pre>
 
-<pre><code>## [1] &quot;odsahw&quot;
+<pre><code>## [1] &quot;wsdhoa&quot;
+</code></pre>
+
+<pre><code class="r">
+superscramble &lt;- function(input) {
+    sapply(input, FUN = scramble)
+}
+
+superscramble(c(&quot;string&quot;, &quot;constant&quot;))
+</code></pre>
+
+<pre><code>##     string   constant 
+##   &quot;rigsnt&quot; &quot;satcnton&quot;
+</code></pre>
+
+<pre><code class="r">
+superscramble(c(&quot;string&quot;, &quot;constant&quot;))
+</code></pre>
+
+<pre><code>##     string   constant 
+##   &quot;inrtsg&quot; &quot;toastncn&quot;
 </code></pre>
 
 <pre><code class="r">
@@ -224,6 +255,18 @@ VowelBleeper(&quot;shadow&quot;)
 </code></pre>
 
 <pre><code>## [1] &quot;sh*d*w&quot;
+</code></pre>
+
+<pre><code class="r">
+superVowelBleeper &lt;- function(input) {
+    sapply(input, FUN = VowelBleeper)
+}
+
+superVowelBleeper(c(&quot;string&quot;, &quot;constant&quot;))
+</code></pre>
+
+<pre><code>##     string   constant 
+##   &quot;str*ng&quot; &quot;c*nst*nt&quot;
 </code></pre>
 
 <pre><code class="r">
@@ -242,6 +285,18 @@ L33t(&quot;shadow&quot;)
 </code></pre>
 
 <pre><code class="r">
+superL33t &lt;- function(input) {
+    sapply(input, FUN = L33t)
+}
+
+superL33t(c(&quot;string&quot;, &quot;constant&quot;))
+</code></pre>
+
+<pre><code>##     string   constant 
+##   &quot;5trin9&quot; &quot;c0n5tant&quot;
+</code></pre>
+
+<pre><code class="r">
 cypher &lt;- function(input) {
     supercypher &lt;- chartr(&quot;abcdefghijklmnopqrstuvwxyz&quot;, &quot;mnopqrstuvwxyzabcdefghijkl&quot;, 
         input)
@@ -252,6 +307,18 @@ cypher(&quot;shadow&quot;)
 </code></pre>
 
 <pre><code>## [1] &quot;etmpai&quot;
+</code></pre>
+
+<pre><code class="r">
+cypher2 &lt;- function(input) {
+    sapply(input, FUN = cypher)
+}
+
+cypher2(c(&quot;string&quot;, &quot;constant&quot;))
+</code></pre>
+
+<pre><code>##     string   constant 
+##   &quot;efduzs&quot; &quot;oazefmzf&quot;
 </code></pre>
 
 </body>
