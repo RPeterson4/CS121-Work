@@ -4,13 +4,13 @@
 
 
 ```r
-reverse2 <- function(input) {
+reverse <- function(input) {
     input2 <- strsplit(input, split = character(0))
     input3 <- input2[[1]][nchar(input):1]
     return(paste(input3, collapse = ""))
 }
 
-reverse2("shadow")
+reverse("shadow")
 ```
 
 ```
@@ -20,7 +20,7 @@ reverse2("shadow")
 ```r
 
 superreverse <- function(input) {
-    sapply(input, FUN = reverse2)
+    sapply(input, FUN = reverse)
 }
 
 superreverse(c("string", "constant"))
@@ -43,7 +43,7 @@ scramble("shadow")
 ```
 
 ```
-## [1] "aoswhd"
+## [1] "sawhdo"
 ```
 
 ```r
@@ -51,7 +51,7 @@ scramble("shadow")
 ```
 
 ```
-## [1] "wsdhoa"
+## [1] "dhawso"
 ```
 
 ```r
@@ -65,7 +65,7 @@ superscramble(c("string", "constant"))
 
 ```
 ##     string   constant 
-##   "rigsnt" "satcnton"
+##   "nrstig" "oncantst"
 ```
 
 ```r
@@ -75,7 +75,7 @@ superscramble(c("string", "constant"))
 
 ```
 ##     string   constant 
-##   "inrtsg" "toastncn"
+##   "igrnst" "cttnonsa"
 ```
 
 ```r

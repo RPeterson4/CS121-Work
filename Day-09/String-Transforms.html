@@ -182,13 +182,13 @@ hljs.initHighlightingOnLoad();
 
 <h2>Reverser</h2>
 
-<pre><code class="r">reverse2 &lt;- function(input) {
+<pre><code class="r">reverse &lt;- function(input) {
     input2 &lt;- strsplit(input, split = character(0))
     input3 &lt;- input2[[1]][nchar(input):1]
     return(paste(input3, collapse = &quot;&quot;))
 }
 
-reverse2(&quot;shadow&quot;)
+reverse(&quot;shadow&quot;)
 </code></pre>
 
 <pre><code>## [1] &quot;wodahs&quot;
@@ -196,7 +196,7 @@ reverse2(&quot;shadow&quot;)
 
 <pre><code class="r">
 superreverse &lt;- function(input) {
-    sapply(input, FUN = reverse2)
+    sapply(input, FUN = reverse)
 }
 
 superreverse(c(&quot;string&quot;, &quot;constant&quot;))
@@ -216,13 +216,13 @@ scramble &lt;- function(input) {
 scramble(&quot;shadow&quot;)
 </code></pre>
 
-<pre><code>## [1] &quot;aoswhd&quot;
+<pre><code>## [1] &quot;sawhdo&quot;
 </code></pre>
 
 <pre><code class="r">scramble(&quot;shadow&quot;)
 </code></pre>
 
-<pre><code>## [1] &quot;wsdhoa&quot;
+<pre><code>## [1] &quot;dhawso&quot;
 </code></pre>
 
 <pre><code class="r">
@@ -234,7 +234,7 @@ superscramble(c(&quot;string&quot;, &quot;constant&quot;))
 </code></pre>
 
 <pre><code>##     string   constant 
-##   &quot;rigsnt&quot; &quot;satcnton&quot;
+##   &quot;nrstig&quot; &quot;oncantst&quot;
 </code></pre>
 
 <pre><code class="r">
@@ -242,7 +242,7 @@ superscramble(c(&quot;string&quot;, &quot;constant&quot;))
 </code></pre>
 
 <pre><code>##     string   constant 
-##   &quot;inrtsg&quot; &quot;toastncn&quot;
+##   &quot;igrnst&quot; &quot;cttnonsa&quot;
 </code></pre>
 
 <pre><code class="r">

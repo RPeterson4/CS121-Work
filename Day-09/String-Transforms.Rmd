@@ -3,14 +3,14 @@
 ## Reverser
 
 ```{r}
-reverse2 <- function(input){
+reverse <- function(input){
   input2 <- strsplit(input,split=character(0))
   input3 <- input2[[1]][nchar(input):1]
   return(paste(input3,collapse=""))}
 
-reverse2("shadow")
+reverse("shadow")
 
-superreverse<-function(input){sapply(input,FUN=reverse2)}
+superreverse<-function(input){sapply(input,FUN=reverse)}
 
 superreverse(c("string","constant"))
 
