@@ -1,0 +1,23 @@
+```{r}
+
+## Step 1, the Key
+key <- "zoo"
+getnum <- function(L){which (L==letters)}
+paste(sapply(unlist(strsplit(key,split=NULL)),FUN=getnum),collapse="")
+
+
+##Step 2, the cypher
+set.seed(paste(sapply(unlist(strsplit(key,split=NULL)),FUN=getnum),collapse=""))
+characters <- c(letters, LETTERS,".",":",",",";",0:9)
+fromandto<-sample(characters)
+fromandto
+
+##Step 3, the encryption
+output<-chartr(paste(characters,collapse=""),paste(fromandto,collapse=""),"Encrypted message")
+output
+
+##Step 4, the decryption
+
+decoded<-chartr(paste(fromandto,collapse=""),paste(characters,collapse=""),output)
+decoded
+```
