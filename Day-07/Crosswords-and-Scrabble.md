@@ -2,8 +2,12 @@
 ```r
 words <- readLines(url("http://dtkaplan.github.io/ScientificComputing/Syllabus/Daily/Day-07/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt"))
 
-## Words of length 1, 2, and 3
-length(words[grep("^.$", words)])
+findpat <- function(a) {
+    return(length(words[grep(a, words)]))
+}
+
+## Number of words that have only one letter
+findpat("^.$")
 ```
 
 ```
@@ -11,7 +15,9 @@ length(words[grep("^.$", words)])
 ```
 
 ```r
-length(words[grep("^..$", words)])
+
+## Number of words that have only two letters
+findpat("^..$")
 ```
 
 ```
@@ -19,7 +25,9 @@ length(words[grep("^..$", words)])
 ```
 
 ```r
-length(words[grep("^...$", words)])
+
+## Number of words that have only three letters
+findpat("^...$")
 ```
 
 ```
@@ -28,8 +36,49 @@ length(words[grep("^...$", words)])
 
 ```r
 
+
+## Number of words that start with the letter a
+findpat("^a")
+```
+
+```
+## [1] 6557
+```
+
+```r
+
+## Number of words that start with the letter b
+findpat("^b")
+```
+
+```
+## [1] 6848
+```
+
+```r
+
+## Number of words that start with the letter c
+findpat("^c")
+```
+
+```
+## [1] 10385
+```
+
+```r
+
+## List of words with q but no u
+findpat("q[^u]")
+```
+
+```
+## [1] 14
+```
+
+```r
+
 ## 100 longest words
-tophundred <- function() {
+topnumwords <- function(n) {
     results <- c()
     topword <- c()
     for (topword in words) {
@@ -37,18 +86,13 @@ tophundred <- function() {
         topword <- words[ind]
         words <- words[-ind]
         results <- c(results, topword)
-        if (length(results) >= 100) 
+        if (length(results) >= n) 
             break
     }
     return(results)
 }
 
-tophundred()
-```
-
-```
-## Warning: closing unused connection 5
-## (http://dtkaplan.github.io/ScientificComputing/Syllabus/Daily/Day-07/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt)
+topnumwords(100)
 ```
 
 ```
@@ -102,42 +146,6 @@ tophundred()
 ##  [95] "counterrevolution"     "counterstrategies"    
 ##  [97] "countersuggestion"     "countertendencies"    
 ##  [99] "counterterrorisms"     "counterterrorists"
-```
-
-```r
-
-## Number of words starting with a, b, and c
-length(words[grep("^a", words)])
-```
-
-```
-## [1] 6557
-```
-
-```r
-length(words[grep("^b", words)])
-```
-
-```
-## [1] 6848
-```
-
-```r
-length(words[grep("^c", words)])
-```
-
-```
-## [1] 10385
-```
-
-```r
-
-## Full list of words with q but no u
-length(words[grep("q[^u]", words)])
-```
-
-```
-## [1] 14
 ```
 
 ```r

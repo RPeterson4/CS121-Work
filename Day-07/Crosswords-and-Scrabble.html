@@ -180,28 +180,69 @@ hljs.initHighlightingOnLoad();
 <body>
 <pre><code class="r">words &lt;- readLines(url(&quot;http://dtkaplan.github.io/ScientificComputing/Syllabus/Daily/Day-07/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt&quot;))
 
-## Words of length 1, 2, and 3
-length(words[grep(&quot;^.$&quot;, words)])
+findpat &lt;- function(a) {
+    return(length(words[grep(a, words)]))
+}
+
+## Number of words that have only one letter
+findpat(&quot;^.$&quot;)
 </code></pre>
 
 <pre><code>## [1] 0
 </code></pre>
 
-<pre><code class="r">length(words[grep(&quot;^..$&quot;, words)])
+<pre><code class="r">
+## Number of words that have only two letters
+findpat(&quot;^..$&quot;)
 </code></pre>
 
 <pre><code>## [1] 85
 </code></pre>
 
-<pre><code class="r">length(words[grep(&quot;^...$&quot;, words)])
+<pre><code class="r">
+## Number of words that have only three letters
+findpat(&quot;^...$&quot;)
 </code></pre>
 
 <pre><code>## [1] 908
 </code></pre>
 
 <pre><code class="r">
+
+## Number of words that start with the letter a
+findpat(&quot;^a&quot;)
+</code></pre>
+
+<pre><code>## [1] 6557
+</code></pre>
+
+<pre><code class="r">
+## Number of words that start with the letter b
+findpat(&quot;^b&quot;)
+</code></pre>
+
+<pre><code>## [1] 6848
+</code></pre>
+
+<pre><code class="r">
+## Number of words that start with the letter c
+findpat(&quot;^c&quot;)
+</code></pre>
+
+<pre><code>## [1] 10385
+</code></pre>
+
+<pre><code class="r">
+## List of words with q but no u
+findpat(&quot;q[^u]&quot;)
+</code></pre>
+
+<pre><code>## [1] 14
+</code></pre>
+
+<pre><code class="r">
 ## 100 longest words
-tophundred &lt;- function() {
+topnumwords &lt;- function(n) {
     results &lt;- c()
     topword &lt;- c()
     for (topword in words) {
@@ -209,17 +250,13 @@ tophundred &lt;- function() {
         topword &lt;- words[ind]
         words &lt;- words[-ind]
         results &lt;- c(results, topword)
-        if (length(results) &gt;= 100) 
+        if (length(results) &gt;= n) 
             break
     }
     return(results)
 }
 
-tophundred()
-</code></pre>
-
-<pre><code>## Warning: closing unused connection 5
-## (http://dtkaplan.github.io/ScientificComputing/Syllabus/Daily/Day-07/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt)
+topnumwords(100)
 </code></pre>
 
 <pre><code>##   [1] &quot;counterdemonstrations&quot; &quot;hyperaggressivenesses&quot;
@@ -272,34 +309,6 @@ tophundred()
 ##  [95] &quot;counterrevolution&quot;     &quot;counterstrategies&quot;    
 ##  [97] &quot;countersuggestion&quot;     &quot;countertendencies&quot;    
 ##  [99] &quot;counterterrorisms&quot;     &quot;counterterrorists&quot;
-</code></pre>
-
-<pre><code class="r">
-## Number of words starting with a, b, and c
-length(words[grep(&quot;^a&quot;, words)])
-</code></pre>
-
-<pre><code>## [1] 6557
-</code></pre>
-
-<pre><code class="r">length(words[grep(&quot;^b&quot;, words)])
-</code></pre>
-
-<pre><code>## [1] 6848
-</code></pre>
-
-<pre><code class="r">length(words[grep(&quot;^c&quot;, words)])
-</code></pre>
-
-<pre><code>## [1] 10385
-</code></pre>
-
-<pre><code class="r">
-## Full list of words with q but no u
-length(words[grep(&quot;q[^u]&quot;, words)])
-</code></pre>
-
-<pre><code>## [1] 14
 </code></pre>
 
 <pre><code class="r">

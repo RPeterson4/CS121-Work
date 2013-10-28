@@ -1,13 +1,34 @@
 ```{r}
 words <- readLines(url("http://dtkaplan.github.io/ScientificComputing/Syllabus/Daily/Day-07/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt"))
 
-##Words of length 1, 2, and 3
-length(words[grep("^.$",words)])
-length(words[grep("^..$",words)])
-length(words[grep("^...$",words)])
+findpat<- function(a){
+  return(length(words[grep(a,words)]))
+}
+
+##Number of words that have only one letter
+findpat("^.$")
+
+##Number of words that have only two letters
+findpat("^..$")
+
+##Number of words that have only three letters
+findpat("^...$")
+
+
+##Number of words that start with the letter a
+findpat("^a")
+
+##Number of words that start with the letter b
+findpat("^b")
+
+##Number of words that start with the letter c
+findpat("^c")
+
+##Number words with q but no u
+findpat("q[^u]")
 
 ## 100 longest words
-tophundred <- function(){
+topnumwords <- function(n){
 results <- c()
 topword <- c()
 for (topword in words){
@@ -15,21 +36,13 @@ for (topword in words){
   topword <- words[ind]
   words <- words[-ind]
   results <- c(results, topword)
-  if (length(results)>=100)
+  if (length(results)>=n)
     break
 }
 return(results)
 }
 
-tophundred()
-
-##Number of words starting with a, b, and c
-length(words[grep("^a",words)])
-length(words[grep("^b",words)])
-length(words[grep("^c",words)])
-
-##Full list of words with q but no u
-length(words[grep("q[^u]",words)])
+topnumwords(100)
 
 ##Crossword Helper
 crossword <- function(pattern){
