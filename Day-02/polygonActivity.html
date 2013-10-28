@@ -181,19 +181,24 @@ hljs.initHighlightingOnLoad();
 <pre><code class="r">a &lt;- (0:100)
 b &lt;- (0:100)
 plot(a ~ b, type = &quot;n&quot;, xaxt = &quot;n&quot;, yaxt = &quot;n&quot;, xlab = &quot;&quot;, ylab = &quot;&quot;, bty = &quot;n&quot;)
+
 s &lt;- c(25, 40, 40, 25, 25)
 q &lt;- c(20, 20, 35, 35, 20)
 polygon(s, q, col = &quot;red&quot;, border = &quot;black&quot;)
+
 angles = seq(0, 2 * pi, length = 1000)
 c = 27.5 + 10 * cos(angles)
 d = 75 + 25 * sin(angles)
 polygon(c, d, col = &quot;pink&quot;, density = 60, border = NA)
+
 e = 55 + 30 * cos(angles)
 f = 55 + 35 * sin(angles)
 polygon(e, f, col = &quot;light blue&quot;, border = NA, density = 70)
+
 x &lt;- c(75, 95, 100, 85, 70, 75)
 y &lt;- c(50, 50, 80, 95, 80, 50)
 polygon(x, y, col = &quot;yellow&quot;, density = 60, border = NA)
+
 u &lt;- c(20, 40, 40, 20, 20)
 r &lt;- c(50, 50, 75, 75, 50)
 polygon(u, r, col = &quot;#00D90020&quot;, border = &quot;blue&quot;, density = 80, lwd = 8)
