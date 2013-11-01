@@ -195,6 +195,20 @@ toBase(10, 2)
 </code></pre>
 
 <pre><code class="r">
+toBase(100, 3)
+</code></pre>
+
+<pre><code>## [1] 1 0 2 0 1
+</code></pre>
+
+<pre><code class="r">
+toBase(1000, 16)
+</code></pre>
+
+<pre><code>## [1]  8 14  3
+</code></pre>
+
+<pre><code class="r">
 baseToNumeric &lt;- function(Nvec, b) {
     howMany &lt;- length(Nvec)
     herdsize &lt;- b^((howMany - 1):0)  ##3, 2, 1

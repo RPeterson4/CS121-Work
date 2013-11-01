@@ -3,12 +3,16 @@ toBase <- function(input, base){
   sofar <- c()
   while (input != 0){
   remainder <- input %% base
-  sofar <- c(sofar, remainder)
   input <- (input-remainder)/base
+  sofar <- c(sofar, remainder)
   }
-  return(sofar)}
+  return(rev(sofar))}
 
 toBase(10,2)
+
+toBase(100,3)
+
+toBase(1000, 16)
 
 baseToNumeric <- function(Nvec,b){
    howMany <- length(Nvec)

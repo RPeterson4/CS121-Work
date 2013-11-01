@@ -19,6 +19,24 @@ toBase(10, 2)
 
 ```r
 
+toBase(100, 3)
+```
+
+```
+## [1] 1 0 2 0 1
+```
+
+```r
+
+toBase(1000, 16)
+```
+
+```
+## [1]  8 14  3
+```
+
+```r
+
 baseToNumeric <- function(Nvec, b) {
     howMany <- length(Nvec)
     herdsize <- b^((howMany - 1):0)  ##3, 2, 1
