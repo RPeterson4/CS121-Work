@@ -35,7 +35,7 @@ lawOfCosines <- function (a,b,l) {
 }
 
 lawOfCosines(13,84,pi/2)
-lawOfCosines(13,84,0)
+lawOfCosines(5,5,pi/3)
 
 thetaFromLengths <- function (a,b,c){
   d = acos(sqrt((a^2+b^2-c^2))/(2*a*b))

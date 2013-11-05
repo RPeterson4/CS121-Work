@@ -1,3 +1,4 @@
+
 ```r
 countOdds <- function(z) {
     k <- 0
@@ -72,11 +73,11 @@ lawOfCosines(13, 84, pi/2)
 ```
 
 ```r
-lawOfCosines(13, 84, 0)
+lawOfCosines(13, 84, 3 * pi/4)
 ```
 
 ```
-## [1] 71
+## [1] 93.64
 ```
 
 ```r
