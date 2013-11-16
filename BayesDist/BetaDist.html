@@ -145,15 +145,29 @@ hr {
 </head>
 
 <body>
-<p>The Uniform Distribution is a continuous distribution along a range of the domain, in which \( f(x) \) has the same value (hence the name uniform). As such, no distribution models uncertainty better than the uniform. The Uniform Distribution of \( X \) between a minimum and maximum value of the domain can be written as:</p>
+<p>The Beta Distribution ranges from 0 to 1, and as such is used for modeling proportions and probabilities:</p>
 
-<p><center> \( X \sim Unif(min,max) \)</center></p>
+<p>\( X \) = a proportion or probability</p>
 
-<p>Provided that:</p>
+<p>Which can be modeled as:</p>
 
-<p><center> \( f(x) = \frac{1}{max-min} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x\in(min,max) \)</center></p>
+<p><center> \( X \sim Beta(a,b) \) </p>
 
-<p>Here, the domain has been set from 0 to 1 while the \( min \) and \( max \) range from 0 to 2:</p>
+<p>\( f(x|a,b)= cx^{a-1} (1-x)^{b-1} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( 0 \leq x \leq 1 \)<b>,</b> &nbsp;&nbsp; \( a=1,2,3... \)<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( b = 1,2,3... \) </center></p>
+
+<p>whereby \( c \) is a normalizing constant that ensures that the probability density function integrates to 1 (i.e., \( \int_0^1 f(x|a,b)dx =1 \)):</p>
+
+<p>\( c \) is equivalent to:</p>
+
+<p><center> \( c = \frac{1}{\int_0^1x^{a-1}(1-x)^{b-1}dx} \)</center></p>
+
+<p>Further:</p>
+
+<p><center> \( E(X)= \frac{a}{a+b} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(X)=\frac{ab}{(a+b)^2(a+b+1)} \)</center></p>
+
+<p>Notice that \( E(X) \) is directly related to \( a \) and inversely related to \( b \)</p>
+
+<p>Here, \( a \) and \( b \) range from 0 to 10.</p>
 
 </body>
 

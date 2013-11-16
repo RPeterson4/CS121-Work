@@ -1,0 +1,13 @@
+The Normal Distribution (aka, the "bell curve") is often used for modeling measurements of phenomena (e.g., grades). The normal distribution of $X$ can be modeled as:
+
+<center> $X \sim Norm(\mu,\sigma^2)$ </center>
+
+whereby:
+
+<center> $f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}exp\{{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}\}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp;  $\infty < x < \infty$<b>,</b> &nbsp;&nbsp; $\mu >0$<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; $\sigma >0$ </center>
+
+and
+
+<center> $E(X) = \mu$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $Var(X) = \sigma^2$ </center>
+
+Here, the domain has been set from 0 to 100 while $\mu$ ranges from 25 to 75 and $\sigma$ ranges from 1 to 20.

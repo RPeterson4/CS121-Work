@@ -145,15 +145,19 @@ hr {
 </head>
 
 <body>
-<p>The Uniform Distribution is a continuous distribution along a range of the domain, in which \( f(x) \) has the same value (hence the name uniform). As such, no distribution models uncertainty better than the uniform. The Uniform Distribution of \( X \) between a minimum and maximum value of the domain can be written as:</p>
+<p>The Normal Distribution (aka, the &ldquo;bell curve&rdquo;) is often used for modeling measurements of phenomena (e.g., grades). The normal distribution of \( X \) can be modeled as:</p>
 
-<p><center> \( X \sim Unif(min,max) \)</center></p>
+<p><center> \( X \sim Norm(\mu,\sigma^2) \) </center></p>
 
-<p>Provided that:</p>
+<p>whereby:</p>
 
-<p><center> \( f(x) = \frac{1}{max-min} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x\in(min,max) \)</center></p>
+<p><center> \( f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}exp\{{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}\} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp;  \( \infty < x < \infty \)<b>,</b> &nbsp;&nbsp; \( \mu >0 \)<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( \sigma >0 \) </center></p>
 
-<p>Here, the domain has been set from 0 to 1 while the \( min \) and \( max \) range from 0 to 2:</p>
+<p>and</p>
+
+<p><center> \( E(X) = \mu \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  \( Var(X) = \sigma^2 \) </center></p>
+
+<p>Here, the domain has been set from 0 to 100 while \( \mu \) ranges from 25 to 75 and \( \sigma \) ranges from 1 to 20.</p>
 
 </body>
 
