@@ -14,9 +14,9 @@ $c$ is equivalent to:
 
 <center> $c = \frac{1}{\int_0^1x^{a-1}(1-x)^{b-1}dx}$</center>
 
-Further:
+The mean and variance for the Beta can be calculated as:
 
-<center> $E(X)= \frac{a}{a+b}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X)=\frac{ab}{(a+b)^2(a+b+1)}$</center>
+<center> $E(X)= \frac{a}{a+b}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X)=\frac{ab}{(a+b)^2(a+b+1)}$</center>
 
 Notice that $E(X)$ is directly related to $a$ and inversely related to $b$
 

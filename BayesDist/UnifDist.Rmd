@@ -6,4 +6,4 @@ Provided that:
 
 <center> $f(x) = \frac{1}{max-min}$ for $x\in(min,max)$</center>
 
-Try it out!
+Try it out! 

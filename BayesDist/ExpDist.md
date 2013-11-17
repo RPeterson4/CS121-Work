@@ -6,7 +6,8 @@ $f(x|\lambda) = \lambda e^{-\lambda x}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $x 
 
 whereby:
 
-<center> $E(X|\lambda) = \frac{1}{\lambda} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Var(X|\lambda)=\frac{1}{\lambda^2}$ </center>
+<center> $E(X|\lambda) = \frac{1}{\lambda}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X|\lambda)=\frac{1}{\lambda^2}$ </center>
 
 Notice that both $E(X|\lambda)$ and $Var(X|\lambda)$ are inversely related to $\lambda$. As $\lambda$ increases, waiting time ($X$) decreases.
 
+Here, the domain has been set from 0 to 5 while $\lambda$ ranges from 0 to 2.
