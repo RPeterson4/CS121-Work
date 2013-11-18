@@ -6,7 +6,7 @@ The Binomial Distribution is often used to model the number of times an event oc
 
 3) Trials are independent from one another and have the same probability of success ($p$)
 
-The Binomial Distribution can be modeled as probability mass function:
+The Binomial Distribution can be modeled as a probability mass function:
 
 <center> $X \sim Binom(n,p)$
 
