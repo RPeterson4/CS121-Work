@@ -14,6 +14,6 @@ $f(x|n,p) = {n \choose x} p^x (1-p)^{n-x}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> fo
 
 whereby:
 
-<center> $E(X) = np$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X) = np(1-p)$
+<center> $E(X) = np$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X) = np(1-p)$ </center>
 
 Here, the domain ranges from 0 to 10 while $n$ ranges from 0 to 10 and $p$ from 0 to 1.
