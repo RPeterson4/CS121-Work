@@ -10,4 +10,4 @@ $E(X|s,r) = \frac{s}{r}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp
 
 Notice that both $E(X|s,r)$ and $Var(X|s,r)$ are directly related to $s$ and inversely related to $r$.
 
-Here, the domain has been set from 0 to 100 while $s$ ranges from 0 to 25 and $r$ from 0 to 1.
+Here, the domain has been set from 0 to 100 while $s$ ranges from 200 to 300 and $r$ from 3 to 7.
