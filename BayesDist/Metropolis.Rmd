@@ -12,7 +12,7 @@ Ross is a novice economist trying to predict the price of lollipops. Let $P$ be 
 
 <center> $P \sim Gamma (7.5, .15)$ 
 
-$p(y|7.5,.15) \propto y^{6.5}e^{-.15y}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>for</b> $y > 0$
+$f(p|7.5,.15) \propto y^{6.5}e^{-.15y}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>for</b> $y > 0$
 
 </center>
 
