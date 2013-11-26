@@ -1,1 +1,1 @@
-Check out the first 100 days of Ross's predictions plus the ones he rejected. How do they change as $\sigma$ changes?
+Check out the first 100 days of acres that Ross worked on plus the ones that he rejected. How do they change as $\sigma$ changes?

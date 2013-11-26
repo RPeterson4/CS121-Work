@@ -8,42 +8,40 @@ The chain of $y$ values then takes on the shape of a random sample from $f(y|x)$
 
 Consider the following example:
 
-Ross is a novice economist trying to predict the price of lollipops. Let $P$ be the price of lollipops whereby $P=p$ and the forecasted price of lollipops is a function of $p$ such that:
+Ross presides over continuous farmland. Let $Y>0$ be the distance from Ross's barn and $f(y)$ be the plant growth density at acre $y$ such that:
 
-<center> $P \sim Gamma (7.5, .15)$ 
+<center> $Y \sim Gamma (7.5, .15)$ 
 
-$f(p|7.5,.15) \propto y^{6.5}e^{-.15y}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>for</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y > 0$
+$f(y|7.5,.15) \propto y^{6.5}e^{-.15y}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>for</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y > 0$
 
 </center>
 
-$p > 0$ because the price of lollipops can't be negative nor zero (sorry, no free lollipops).
+Ross intends his time spent working on each acre to be proportional to its relative plant density. How can a Metropolis Algorithm simulate Ross's work schedule?
 
-Ross spends a certain number of days on each price of lollipops that he predicts (e.g., for six days he might predict a price of 35 cents). He intends for this number of days to be proportional to the forecasted price of lollipops. How can a Metropolis Algorithm simulate Ross's predictions?
+Let $y$ start at acre $50$:
 
-Let Ross start at $P_1 = 50$:
-
-For each day, we propose a new forecasted price of lollipops to Ross from some symmetric distribution, $N(\mu,\sigma)$:
+For each day, we propose a new acre to Ross from some symmetric distribution, $N(\mu,\sigma)$:
 
 <i>set.seed(2000)</i>
 
-<i> p1 = 50 </i>
+<i> y1 = 50 </i>
 
-<i>f1 = rnorm(1,mean=p1,sd=10)</i>
+<i>f1 = rnorm(1,mean=y1,sd=10)</i>
 
-Ross then compares the new price to the price he is currently predicting:
+Ross then compares the plant growth of the new acre to that of the acre he is currently working on:
 
-<i>paccept = min(1,dgamma(f1,s=7.5,r=.15)/dgamma(p1,s=7.5,r=.15))</i>
+<i>paccept = min(1,dgamma(f1,s=7.5,r=.15)/dgamma(y1,s=7.5,r=.15))</i>
 
-If the new price > current price, Ross will always switch to the new price. This is reflected in the command <i>min (1...)</i>. If the new price > current price, <i>min(1...)</i> will always select 1, a probability of 100%.
+If the plant growth of the new acre > old acre, Ross will always switch to the new acre. This is reflected in the command <i>min (1...)</i>. If the plant growth of the new acre > current acre, <i>min(1...)</i> will always select 1, a probability of 100%.
 
-If the new price < current price, Ross will switch based on the probability generated from $\frac{new \ price}{current \ price}$: simulated by: <i> dgamma(f1,s=7.5,r=.15)/dgamma(p1,s=7.5,r=.15) </i>. 
+If the plant growth of the new acre < current acre, Ross will switch based on the probability generated from $\frac{plant \ growth \ of \ new \ acre}{plant \ growth \ of \ current \ acre}$: simulated by: <i> dgamma(f1,s=7.5,r=.15)/dgamma(y1,s=7.5,r=.15) </i>. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Note that Ross's decision to accept the new price depends on his current price
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Note that Ross's decision to work on the new acre depends on the plant growth of his current acre
 
-Ross's potential acceptance of the new price can be simulated as:
+Ross's potential acceptance of the new acre can be simulated as:
 
-<i> p2 = sample(c(f1,p1),size=1,prob(paccept,1-paccept))</i>
+<i> p2 = sample(c(f1,y1),size=1,prob(paccept,1-paccept))</i>
 
-As the days pass, new forecasted prices come in and Ross compares them to his current price, making for a cyclical algorithm that after enough samples approximates $P \sim Gamma (7.5, .15)$. 
+As the days pass, we propose new acres to Ross who then compares them to his current acre, making for a cyclical algorithm that after enough samples approximates $P \sim Gamma (7.5, .15)$. 
 
-Here, the number of samples has been set from 100 to 10,000. $\sigma$ alters the standard deviation of the forecasted prices proposed to Ross.
+Here, the number of samples has been set from 100 to 10,000. $\sigma$ alters the standard deviation of the acres proposed to Ross.
