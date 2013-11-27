@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<p>Firms often intend to maximize production from a limited amount of labor and capital.
+A Cobb-Douglas production function can help find the optimal amount of labor and capital necessary to maximize production:</p>
+
+<p><center> \( Y=AL^BK^a \) </center></p>
+
+<p>whereby: </p>
+
+<p><center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Y \) = total production
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( L \) = the labor used
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( K \) = the capital used
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( A \) = total factor productivity</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( B \) = output elasticity of labor (i.e., the productivity of labor)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( a \) = output elasticity of capital (i.e., the productivity of capital) </center></p>
+
+<p>However, firms also often have budget constraints on the use of labor and capital, such as:</p>
+
+<p><center> \( pL + qK = C \)</center></p>
+
+<p>whereby:</p>
+
+<p><center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( p \) = the price of labor 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( q \) = the price of capital
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( C \) = the budget of the firm
+</center></p>
+
+<p>Consider a firm whose production function is given by:</p>
+
+<p><center> \( Y=6L^{.25}K^{.75} \) </center></p>
+
+<p>and whose budget constraint is given by:</p>
+
+<p><center> \( 5L + 4K = 600 \)</center></p>
+
+<p>How can Lagrange multipliers find the optimal capital and labor necessary to maximize production for this firm?</p>
+
+<p>We are interested in computing \( gradY=\lambda gradC \). We&#39;ll need to compare \( Y_L \) to \( C_L \) and \( Y_K \) to \( C_K \) for both equations:</p>
+
+<p><center> \( Y_L = \lambda C_L \)</p>
+
+<p>\( 1.5L^{-.75}K^{.75}=5\lambda \)</p>
+
+<p>\( Y_K = \lambda C_K \)</p>
+
+<p>\( 4.5L^{.25}K^{-.25}=4\lambda \)
+</center></p>
+
+<p>Solving for lambda and setting the two equations equal to each other gives:</p>
+
+<p><center> \( \frac{1.5L^{-.75}K^{.75}}{5}=\frac{4.5L^{.25}K^{-.25}}{4} \) </center></p>
+
+<p>By simplifying and rearranging the equation we can solve for capital in terms of labor:</p>
+
+<p><center> \( K=3.75L \) </center></p>
+
+<p>Then we substitute \( K \) in terms of labor back into our budget constraint and solve for \( L \):</p>
+
+<p><center> \( 5L + 4(3.75L) = 600 \)</p>
+
+<p>\( L = 30 \) </center></p>
+
+<p>Knowing \( L \) we solve for \( K \):</p>
+
+<p><center> \( K = 3.75(30) \)</p>
+
+<p>\( K=112.5 \) </center></p>
+
+<p>Lastly, we plug in our values of \( L \) and \( K \) to determine our total production:</p>
+
+<p><center> \( 6(30)^{.25}* (112.5)^{.75} = 485.06 \)</center></p>
+
+<p>And voila! Lagrange multipliers have helped us determine that \( 30 \) labor and \( 112.5 \) capital will achieve the optimized total production of \( 485.06 \).</p>
+
+</body>
+
+</html>
+
