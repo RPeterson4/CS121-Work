@@ -1,0 +1,26 @@
+Recall the Beta Distribution, often used to model proportions or probabilities. For $P$, a proportion or probability:
+
+<center> $P \sim Beta(a,b)$ 
+
+$f(p|a,b)= cp^{a-1}(1-p)^{b-1}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $0 \leq p \leq 1$</center>
+
+A beta distribution can act as a prior to binomial data. For the binomial distribution of the data $X|p$:
+
+<center> $X|p \sim Binom(n,p)$
+
+$f(x|n,p) = cp^x (1-p)^{n-x}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> for </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n>0$ <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $0 \leq p \leq 1$ <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x \in \{0,1,2...n\}$ </center>
+
+As ${n \choose x}$ is a constant, it is represented as such with $c$.
+
+The posterior distribution is then:
+
+<center> $f(p|X) \propto f(X|p)*f(p)$
+
+$f(p|X) \propto p^x (1-p)^{n-x} * p^{a-1}(1-p)^{b-1} = p^{x+a-1}(1-p)^{n-x+b-1}$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> for </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $n>0$ <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $0 \leq p \leq 1$ <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $x \in \{0,1,2...n\}$
+
+$\propto P|X \sim Beta(a+x, n-x+b)$
+</center>
+
+Here, $a$, $b$, $n$, and $x$ each range from 0 to 10. 

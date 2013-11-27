@@ -145,17 +145,29 @@ hr {
 </head>
 
 <body>
-<p>The Gamma Distribution is often used to model the waiting time before the <i>s</i>th occurrence of an event. It can also model the expected number of occurrences of an event over an interval of time, similar to a poisson distribution. For \( X \), the Gamma Distribution is:</p>
+<p>Recall the Gamma Distribution, often used to model the expected number of occurrences of an event over an interval of time. For \( \lambda \), the Gamma Distribution is:</p>
 
-<p><center> \( X \sim Gamma(s,r) \)</p>
+<p><center> \( \lambda \sim Gamma(s,r) \)</p>
 
-<p>\( f(x|s,r) = \frac{r^2}{\Gamma (s)} x^{s-1} e^{-rx} \propto x^{s-1}e^{-rx} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( r >0 \)</p>
+<p>\( f(\lambda|s,r) \propto \lambda^{s-1}e^{-r\lambda} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( \lambda > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( r >0 \) </center></p>
 
-<p>\( E(X|s,r) = \frac{s}{r} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(X|s,r) = \frac{s}{r^2} \)  </center></p>
+<p>A gamma distribution can act as a prior to longitudinal data from a poisson distribution. In particular, a gamma can inherit a random sample of \( n \) observations from the poisson. For the poisson distribution of the data \( X_1,X_2,...X_n|\lambda \):</p>
 
-<p>Notice that both \( E(X|s,r) \) and \( Var(X|s,r) \) are directly related to \( s \) and inversely related to \( r \).</p>
+<p><center> \( f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x_i \in \{1,2,...n\} \) &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; \( \lambda>0 \)</center></p>
 
-<p>Here, the domain has been set from 0 to 100 while \( s \) ranges from 200 to 300 and \( r \) from 3 to 7.</p>
+<p>The posterior distribution is then:</p>
+
+<p><center> \( f(\lambda|x_1,x_2,...x_n) = f(x_1,x_2,...x_n|\lambda)f(\lambda \))</p>
+
+<p>\( f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda}*\lambda^{s-1}e^{-r\lambda} \) =\( \lambda^{(s-1)+\sum\limits_{i=1}^nx_i}e^{-(n+r)\lambda} \)</p>
+
+<p>&nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( \lambda > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; \( r>0 \) <b>,</b> &nbsp;&nbsp; \( x_i \in \{1,2,...n\} \)<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( \lambda >0 \) </p>
+
+<p>\( \propto \lambda|x_1,x_2,...,x_n \sim Gamma(s+\sum\limits_{i=1}^nx_i,r+n) \)</p>
+
+<p></center></p>
+
+<p>Here, \( s \) ranges from 200 to 300 and \( r \) from 4 to 8. The poisson distribution takes a sum of \( x_i \) values ranging from 20 to 300, as well as a value of \( n \) ranging from 1 to 10. The average, \( \frac{\sum\limits_{i=1}^nx_i}{n} \), is given in a table.</p>
 
 </body>
 

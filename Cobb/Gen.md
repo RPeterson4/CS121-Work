@@ -69,4 +69,4 @@ Lastly, we plug in our values of $L$ and $K$ to determine our total production:
 
 <center> $6(30)^{.25}* (112.5)^{.75} = 485.06$</center>
 
-And voila! Lagrange multipliers have helped us determine that $30$ labor and $112.5$ capital will achieve the optimized total production of $485.06$.
+And voila! Lagrange multipliers have helped us determine that 30 labor and 112.5 capital will achieve the optimized total production of 485.06.

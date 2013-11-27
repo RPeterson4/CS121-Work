@@ -6,7 +6,7 @@ Which can be modeled as:
 
 <center> $X \sim Beta(a,b)$ 
 
-$f(x|a,b)= cx^{a-1} (1-x)^{b-1}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $0 \leq x \leq 1$<b>,</b> &nbsp;&nbsp; $a=1,2,3...$<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; $b = 1,2,3...$ </center>
+$f(x|a,b)= cx^{a-1} (1-x)^{b-1}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $0 \leq x \leq 1$ </center>
 
 whereby $c$ is a normalizing constant that ensures that the probability density function integrates to 1 (i.e., $\int_0^1 f(x|a,b)dx =1$):
 

@@ -145,17 +145,32 @@ hr {
 </head>
 
 <body>
-<p>The Gamma Distribution is often used to model the waiting time before the <i>s</i>th occurrence of an event. It can also model the expected number of occurrences of an event over an interval of time, similar to a poisson distribution. For \( X \), the Gamma Distribution is:</p>
+<p>Recall the Beta Distribution, often used to model proportions or probabilities. For \( P \), a proportion or probability:</p>
 
-<p><center> \( X \sim Gamma(s,r) \)</p>
+<p><center> \( P \sim Beta(a,b) \) </p>
 
-<p>\( f(x|s,r) = \frac{r^2}{\Gamma (s)} x^{s-1} e^{-rx} \propto x^{s-1}e^{-rx} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( r >0 \)</p>
+<p>\( f(p|a,b)= cp^{a-1}(1-p)^{b-1} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( 0 \leq p \leq 1 \)</center></p>
 
-<p>\( E(X|s,r) = \frac{s}{r} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(X|s,r) = \frac{s}{r^2} \)  </center></p>
+<p>A beta distribution can act as a prior to binomial data. For the binomial distribution of the data \( X|p \):</p>
 
-<p>Notice that both \( E(X|s,r) \) and \( Var(X|s,r) \) are directly related to \( s \) and inversely related to \( r \).</p>
+<p><center> \( X|p \sim Binom(n,p) \)</p>
 
-<p>Here, the domain has been set from 0 to 100 while \( s \) ranges from 200 to 300 and \( r \) from 3 to 7.</p>
+<p>\( f(x|n,p) = cp^x (1-p)^{n-x} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> for </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( n>0 \) <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( 0 \leq p \leq 1 \) <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( x \in \{0,1,2...n\} \) </center></p>
+
+<p>As \( {n \choose x} \) is a constant, it is represented as such with \( c \).</p>
+
+<p>The posterior distribution is then:</p>
+
+<p><center> \( f(p|X) \propto f(X|p)*f(p) \)</p>
+
+<p>\( f(p|X) \propto p^x (1-p)^{n-x} * p^{a-1}(1-p)^{b-1} = p^{x+a-1}(1-p)^{n-x+b-1} \)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> for </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( n>0 \) <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( 0 \leq p \leq 1 \) <b>, </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( x \in \{0,1,2...n\} \)</p>
+
+<p>\( \propto P|X \sim Beta(a+x, n-x+b) \)
+</center></p>
+
+<p>Here, \( a \), \( b \), \( n \), and \( x \) each range from 0 to 10. </p>
 
 </body>
 
