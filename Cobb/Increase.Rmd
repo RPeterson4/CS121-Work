@@ -1,6 +1,6 @@
 What if the firm's production function was instead:
 
-<center> $Y=AL^{.25}K^{.75}$ </center>
+<center> $Y=AL^{.3}K^{.8}$ </center>
 
 while its budget constraint was still the same:
 
