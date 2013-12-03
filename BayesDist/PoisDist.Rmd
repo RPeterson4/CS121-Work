@@ -1,3 +1,5 @@
+<img src="http://www.clker.com/cliparts/a/7/n/G/p/e/goldfish.svg" width="250" height="125" align="left">
+
 The Poisson Distribution is often used for modeling the occurrences of an event over time whereby:
 
 <center> $X$ = the number of occurrences over an interval of time

@@ -1,3 +1,5 @@
+<img src="http://aspergersgirls.files.wordpress.com/2012/03/normal12.jpg" width="150" height="150" align="left">
+
 The Normal Distribution (aka, the "bell curve") is often used for modeling measurements of phenomena (e.g., grades). The normal distribution of $X$ can be modeled as:
 
 <center> $X \sim Norm(\mu,\sigma^2)$ </center>
