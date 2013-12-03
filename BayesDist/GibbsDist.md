@@ -16,7 +16,7 @@ If the chain is currently at ($U_t,V_t$), to move to ($U_{t+1},V_{t+1}$) we upda
 
 $V|U = u \sim N\left(\mu_v + \frac{\sigma_v}{\sigma_u}\rho(u-\mu_u),(1-\rho^2)\sigma_v^2\right)$</center>
 
-<img src="http://sd.keepcalm-o-matic.co.uk/i/one-at-a-time-please.png" width="200" height="200" align="center">
+<img src="http://sd.keepcalm-o-matic.co.uk/i/one-at-a-time-please.png" width="200" height="200" align="right">
 
 Substituting in our values, we can then make a Gibbs Sampler with the following steps:
 
