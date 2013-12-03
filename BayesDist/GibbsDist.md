@@ -1,0 +1,35 @@
+Gibbs Samplers are often preferable to Metropolis algorithms for multivariate target densities. The key difference is that Gibbs Samplers update our location one variable at a time, whereas Metropolis algorithms update our location using all variables at once (as a group).
+
+Consider the following bivariate normal target density:
+
+\[\left(\begin{array}{cc}
+U \\
+V \end{array} \right)\sim N \left(\left(\begin{array}{cc}
+3 \\
+4 \end{array} \right), \left( \begin{array}{cc}
+.6^2 & .5 \\
+.5 & .9^2 \end{array} \right)\right)\]
+
+If the chain is currently at ($U_t,V_t$), to move to ($U_{t+1},V_{t+1}$) we update $U_{t+1}$ and $V_{t+1}$ one at a time by drawing from the conditional distributions of $f(u'|v)$ and $f(v'|u')$ one at a time. We will then need the formulas for the conditional distributions of the bivariate normal distribution, given as:
+
+<center> $U|V = v \sim N\left(\mu_u + \frac{\sigma_u}{\sigma_v}\rho(v-\mu_v),(1-\rho^2)\sigma_u^2\right)$
+
+$V|U = u \sim N\left(\mu_v + \frac{\sigma_v}{\sigma_u}\rho(u-\mu_u),(1-\rho^2)\sigma_v^2\right)$</center>
+
+<img src="http://sd.keepcalm-o-matic.co.uk/i/one-at-a-time-please.png" width="125" height="125" align="right">
+
+Substituting in our values, we can then make a Gibbs Sampler with the following steps:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Update $U_{t+1}=u'$ first:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw $u'$ from $f(u'|v) = v \sim N(3+\frac{.6}{.9}.5(v-4),(1-.5^2),.6^2)$
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Update $V_{t+1}=v'$ next:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw $v'$ from $f(v'|u) = u \sim N(4+\frac{.9}{.6}.5(v-3),(1-.5^2),.9^2)$
+
+Repeating the steps then approximates the bivariate normal target density after enough trials.
+
+On the other hand, a Metropolis Algorithm would draw $u'$ and $v'$ from some other distribution before comparing $\frac{f(u',v')}{f(u,v)}$ to make a move.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Notice that the Gibbs Sampler only takes $n$ trials as an input, whereas the Metropolis algorithm requires $n$ as well as $\sigma_u$ and $\sigma_v$ (the standard deviations for the variables needed to propose a new location).

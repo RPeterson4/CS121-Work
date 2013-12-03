@@ -1,3 +1,5 @@
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/af/Times_New_Roman_Greek_small_letter_beta.svg" width="100" height="200" align="left">
+
 The Beta Distribution ranges from 0 to 1, and as such is used for modeling proportions and probabilities:
 
 $X$ = a proportion or probability
