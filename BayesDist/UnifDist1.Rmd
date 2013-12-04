@@ -1,4 +1,4 @@
-<img src="http://cdn.sheknows.com/articles/2013/11/sports-jerseys.jpg" width="250" height="125" align="left">
+<img src="http://cdn.sheknows.com/articles/2013/11/sports-jerseys.jpg" width="250" height="125" align="left" style="margin-right: 20px;">
 
 The Uniform Distribution is a continuous distribution along a range of the domain, in which $f(x)$ has the same value (hence the name uniform). As such, no distribution models uncertainty better than the uniform. The Uniform Distribution of $X$ between a minimum and maximum value of the domain can be written as:
 

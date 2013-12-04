@@ -1,4 +1,4 @@
-<img src="http://images1.wikia.nocookie.net/__cb20120728230149/smallville/images/8/89/Metropolis2013.png" width="250" height="125" align="left">
+<img src="http://images1.wikia.nocookie.net/__cb20120728230149/smallville/images/8/89/Metropolis2013.png" width="275" height="150" align="left" style="margin-right: 20px;">
 
 In hierarchical Bayesian modeling, the high number of priors often makes deriving the posterior density difficult. A possible solution is a Markov chain Monte Carlo (MCMC) simulation. For $Y$, a set of complicated prior parameters, and $X=x$, an observed set of data, MCMC involves taking a chain of samples ($y_1,y_2,...,y_n$) from a distribution $\neq f(y|x)$, whereby the samples are dependent upon one another (i.e., $y_{i+1}$ depends on $y_i$). A couple criteria allow this chain to approximate the posterior $f(y|x)$, also known as the target density:
 
@@ -10,7 +10,7 @@ The chain of $y$ values then takes on the shape of a random sample from $f(y|x)$
 
 Consider the following example:
 
-<img src="http://www.nrcs.usda.gov/Internet/FSE_MEDIA/stelprdb1049230.jpg" width="250" height="125" align="right">
+<img src="http://www.nrcs.usda.gov/Internet/FSE_MEDIA/stelprdb1049230.jpg" style="float:right" width="350" height="175">
 
 Ross presides over continuous farmland. Let $Y>0$ be the distance from Ross's barn and $f(y)$ be the plant growth density at acre $y$ such that:
 

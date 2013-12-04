@@ -22,11 +22,11 @@ Substituting in our values, we can then make a Gibbs Sampler with the following 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Update $U_{t+1}=u'$ first:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw $u'$ from $f(u'|v) = v \sim N(3+\frac{.6}{.9}.5(v-4),(1-.5^2),.6^2)$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw $u'$ from $f(u'|v) = v \sim N(3+\frac{.6}{.9}.5(v-4),(1-.5^2).6^2)$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Update $V_{t+1}=v'$ next:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw $v'$ from $f(v'|u) = u \sim N(4+\frac{.9}{.6}.5(v-3),(1-.5^2),.9^2)$
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw $v'$ from $f(v'|u) = u \sim N(4+\frac{.9}{.6}.5(u-3),(1-.5^2).9^2)$
 
 Repeating the steps then approximates the bivariate normal target density after enough trials.
 

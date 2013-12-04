@@ -1,4 +1,4 @@
-<img src="http://winetastingguy.com/wp-content/uploads/2008/08/coin-flip.jpg" width="225" height="225" align="left"> The Binomial Distribution is often used to model the number of times an event occurs (aka "successes") over $n$ trials whereby $p$ is some probability of success. It has three assumptions:
+<img src="http://winetastingguy.com/wp-content/uploads/2008/08/coin-flip.jpg" width="225" height="225" align="left" style="margin-right: 20px;"> The Binomial Distribution is often used to model the number of times an event occurs (aka "successes") over $n$ trials whereby $p$ is some probability of success. It has three assumptions:
 
 1) $n$ is fixed
 

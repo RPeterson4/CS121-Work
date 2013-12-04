@@ -1,4 +1,4 @@
-<img src="http://i1.sndcdn.com/avatars-000059094172-rgbc57-crop.jpg?3eddc42" width="200" height="200" align="left">
+<img src="http://i1.sndcdn.com/avatars-000059094172-rgbc57-crop.jpg?3eddc42" width="200" height="200" align="left" style="margin-right: 20px;">
 
 Two normal distributions can combine to form a joint distribution, termed the bivariate normal distribution. Consider the normal distributions of $X$ and $Y$:
 

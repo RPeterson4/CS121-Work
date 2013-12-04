@@ -1,4 +1,4 @@
-<img src="http://www.clker.com/cliparts/a/7/n/G/p/e/goldfish.svg" width="250" height="125" align="left">
+<img src="http://www.clker.com/cliparts/a/7/n/G/p/e/goldfish.svg" width="250" height="125" align="left" style="margin-right: 20px;">
 
 The Poisson Distribution is often used for modeling the occurrences of an event over time whereby:
 

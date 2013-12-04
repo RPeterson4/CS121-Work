@@ -169,11 +169,11 @@ V \end{array} \right)\sim N \left(\left(\begin{array}{cc}
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Update \( U_{t+1}=u' \) first:</p>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw \( u' \) from \( f(u'|v) = v \sim N(3+\frac{.6}{.9}.5(v-4),(1-.5^2),.6^2) \)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw \( u' \) from \( f(u'|v) = v \sim N(3+\frac{.6}{.9}.5(v-4),(1-.5^2).6^2) \)</p>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Update \( V_{t+1}=v' \) next:</p>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw \( v' \) from \( f(v'|u) = u \sim N(4+\frac{.9}{.6}.5(v-3),(1-.5^2),.9^2) \)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Draw \( v' \) from \( f(v'|u) = u \sim N(4+\frac{.9}{.6}.5(u-3),(1-.5^2).9^2) \)</p>
 
 <p>Repeating the steps then approximates the bivariate normal target density after enough trials.</p>
 

@@ -1,8 +1,8 @@
-<img src="http://aspergersgirls.files.wordpress.com/2012/03/normal12.jpg" width="150" height="150" align="left">
+<img src="http://aspergersgirls.files.wordpress.com/2012/03/normal12.jpg" width="150" height="150" align="left" style="margin-right: 20px;">
 
 The Normal Distribution (aka, the "bell curve") is often used for modeling measurements of phenomena (e.g., grades). The normal distribution of $X$ can be modeled as:
 
-<center> $X \sim Norm(\mu,\sigma^2)$ </center>
+<center> $X \sim N(\mu,\sigma^2)$ </center>
 
 whereby:
 

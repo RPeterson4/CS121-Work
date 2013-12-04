@@ -1,4 +1,4 @@
-<img src="http://eyecandydecalswholesale.com/images/products/GKGAM-2.png" width="160" height="90" align="left">
+<img src="http://eyecandydecalswholesale.com/images/products/GKGAM-2.png" width="160" height="90" align="left" style="margin-right: 20px;">
 
 The Gamma Distribution is often used to model the waiting time before the <i>s</i>th occurrence of an event. It can also model the expected number of occurrences of an event over an interval of time, similar to a poisson distribution. For $X$, the Gamma Distribution is:
 
