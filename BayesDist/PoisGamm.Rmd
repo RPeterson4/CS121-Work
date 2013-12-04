@@ -1,3 +1,5 @@
+<img src="http://www.pepijnvanerp.nl/wordpress/wp-content/uploads/2012/05/xkcd-p-value-xs.png" width="125" height="180" align="left" style="margin-right: 20px;">
+
 Recall the Gamma Distribution, often used to model the expected number of occurrences of an event over an interval of time. For $\lambda$, the Gamma Distribution is:
 
 <center> $\lambda \sim Gamma(s,r)$
@@ -7,6 +9,8 @@ $f(\lambda|s,r) \propto \lambda^{s-1}e^{-r\lambda}$ &nbsp;&nbsp; <b>for</b> &nbs
 A gamma distribution can act as a prior to longitudinal data from a poisson distribution. In particular, a gamma can inherit a random sample of $n$ observations from the poisson. For the poisson distribution of the data $X_1,X_2,...X_n|\lambda$:
 
 <center> $f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $x_i \in \{1,2,...n\}$ &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; $\lambda>0$</center>
+
+<img src="http://web.ics.purdue.edu/~jltobias/BayesClass/peanuts.jpg" style="float:right" width="300" height="175">
 
 The posterior distribution is then:
 

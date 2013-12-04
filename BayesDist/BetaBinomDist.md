@@ -1,3 +1,5 @@
+<img src="http://i.stack.imgur.com/hN4lW.png" width="225" height="350" align="left" style="margin-right: 20px;">
+
 Recall the Beta Distribution, often used to model proportions or probabilities. For $P$, a proportion or probability:
 
 <center> $P \sim Beta(a,b)$ 
@@ -23,4 +25,5 @@ $f(p|X) \propto p^x (1-p)^{n-x} * p^{a-1}(1-p)^{b-1} = p^{x+a-1}(1-p)^{n-x+b-1}$
 $\propto P|X \sim Beta(a+x, n-x+b)$
 </center>
 
+<br>
 Here, $a$, $b$, $n$, and $x$ each range from 0 to 10. 
