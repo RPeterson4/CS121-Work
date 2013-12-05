@@ -8,4 +8,4 @@ while its budget constraint was still the same:
 
 Here, $B+a>1$ (i.e., $.3 + .8 = 1.1$), signifying that the production function has increasing returns to scale. That is, doubling the usage of labor and capital will more than double total production.
 
-How does this plot compare to the past one?
+How does this plot compare to the last one?
