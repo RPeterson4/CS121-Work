@@ -1,12 +1,12 @@
 <img src="http://i1.sndcdn.com/avatars-000059094172-rgbc57-crop.jpg?3eddc42" width="200" height="200" align="left" style="margin-right: 20px;">
 
-Two normal distributions can combine to form a joint distribution, termed the bivariate normal distribution. Consider the normal distributions of $X$ and $Y$:
+Two normally distributed random variables can combine to form the Bivariate Normal Distribution. Consider the normal distributions of $X$ and $Y$:
 
 <center> $X\sim N(\mu_x,\sigma_x^2)$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Y\sim N(\mu_y,\sigma_y^2)$ </center>
 
 $X$ and $Y$ can be correlated with each other according to the value of $\rho$. Think of $\rho$ as like a correlation coefficient, whereby $\rho>0$ indicates a positive relationship and $\rho<0$ a negative relationship. If $\rho=0$, $X$ and $Y$ are independent.
 
-The bivariate normal distribution is then:
+For $X$ and $Y$, the joint Bivariate Normal Distribution is:
 
 \[\left(\begin{array}{cc}
 X \\
@@ -18,7 +18,7 @@ Y \end{array} \right)\sim N \left(\left(\begin{array}{cc}
 
 whereby $\mu$ is the mean vector and $\Sigma$ is the covariance matrix.
 
-The joint density is:
+$X$ and $Y$ then have the corresponding joint probability density function:
 
 \[f(x,y) =\frac{1}{2\pi}|\Sigma|^{\frac{-1}{2}}exp\left\{ -\frac{1}{2}(x-\mu_x,y-\mu_y)\Sigma^{-1}\left(\begin{array}{cc}
 x-\mu_x \\
@@ -26,6 +26,8 @@ y-\mu_y \end{array} \right)\right\} \] <center> <b>for</b> &nbsp;&nbsp; $\infty 
 
 whereby $|\Sigma|$ is the determinant of the covariance matrix $\Sigma$ and $\Sigma^{-1}$ is the matrix inverse.
 
-When $X$ and $Y$ are independent, the joint density is:
+When $X$ and $Y$ are independent, the joint probability density function is:
 
-\[f(x,y) =f(x)f(y) =\frac{1}{2\pi\sigma_x \sigma_y}exp\left\{ -\frac{1}{2}\left(\frac{x-\mu_x}{\sigma_x}\right)^2\right\}exp\left\{-\frac{1}{2}\left(\frac{y-\mu_y}{\sigma_y}\right)^2\right\}\]
+\[f(x,y) =f(x)f(y) =\frac{1}{2\pi\sigma_x \sigma_y}exp\left\{ -\frac{1}{2}\left(\frac{x-\mu_x}{\sigma_x}\right)^2\right\}exp\left\{-\frac{1}{2}\left(\frac{y-\mu_y}{\sigma_y}\right)^2\right\}\] <center><b>for</b> &nbsp;&nbsp; $\infty < x,y < \infty$ &nbsp;&nbsp;</center>
+
+Here, the x and y-axes each range from -7.5 to 7.5. Both $\mu_x$ and $\mu_y$ range from -2 to 2, both $\sigma_x$ and $\sigma_y$ range from .1 to 2, and $\rho$ ranges from -.9 to .9.

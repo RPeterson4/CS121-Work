@@ -1,11 +1,17 @@
-<img src="http://cdn.sheknows.com/articles/2013/11/sports-jerseys.jpg" width="250" height="125" align="left" style="margin-right: 20px;">
+<img src="http://cdn.sheknows.com/articles/2013/11/sports-jerseys.jpg" width="350" height="250" align="left"" style="margin-right: 20px;">
 
-The Uniform Distribution is a continuous distribution along a range of the domain, in which $f(x)$ has the same value (hence the name uniform). As such, no distribution models uncertainty better than the uniform. The Uniform Distribution of $X$ between a minimum and maximum value of the domain can be written as:
+The Uniform Distribution is a continuous distribution along a range of x-values. For the random variable $X$, the corresponding uniform density function $f(x)$ has the same value at every point it is defined (hence the name uniform). As such, no distribution models uncertainty better than the uniform. The Uniform Distribution of $X$ between a minimum and maximum x-value can be written as:
 
 <center> $X \sim Unif(min,max)$</center>
 
-Provided that:
+whereby $X$ has the corresponding probability density function:
 
 <center> $f(x) = \frac{1}{max-min}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $x\in(min,max)$</center>
 
-Here, the domain has been set from 0 to 1 while the $min$ and $max$ range from 0 to 2:
+Obviously, $min \ngeq max$.
+
+The mean and variance for $X$ can be calculated as:
+
+<center> $E(X)= \frac{1}{2}(a+b)$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X)=\frac{1}{12}(b-a)^2$</center>
+
+Here, the x-axis, $min$, and $max$ each range from 0 to 1.

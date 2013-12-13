@@ -147,29 +147,21 @@ hr {
 <body>
 <p><img src="http://www.clker.com/cliparts/a/7/n/G/p/e/goldfish.svg" width="250" height="125" align="left" style="margin-right: 20px;"></p>
 
-<p>The Poisson Distribution is often used for modeling the occurrences of an event over time whereby:</p>
+<p>The Poisson Distribution is often used for modeling the number of occurrences of an event, \( X \), over an interval of time, whereby \( \lambda \) is the expected number of occurrences over the interval. For \( X \), the Poisson Distribution is:</p>
 
-<p><center> \( X \) = the number of occurrences over an interval of time</p>
+<p><center>\( X \sim Pois(\lambda) \)</center></p>
 
-<p>\( \lambda \) = the expected number of occurrences over the interval </center></p>
-
-<p>\( X \) is conditioned on \( \lambda \) because we have some expectation of the number of occurrences of an event (\( \lambda \)) before those occurrences actually happen (\( X \)).</p>
-
-<p>The Poisson Distribution can then be modeled as:</p>
-
-<p>\( X \sim Pois(\lambda) \)</p>
+<p>whereby \( X \) has the corresponding probability mass function:</p>
 
 <p><center> \( f(x|\lambda) = \frac{e^{\lambda}\lambda^x}{x!} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x=0,1,2... \) &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; \( \lambda>0 \)</center></p>
 
-<p>whereby: </p>
+<p>The mean and variance for \( X \) can be calculated as:</p>
 
 <p><center> \( E(X) = Var(X) = \lambda \) </center></p>
 
 <p>Notice that because \( Var(X) = \lambda \), the distribution becomes more spread out as \( \lambda \) increases. This is because the more occurrences we expect, the wider our range becomes of possible occurrences. </p>
 
-<p>As occurrences either happen or they don&#39;t, \( X \) is a discrete random variable, making for a probability mass function.</p>
-
-<p>Here, the domain has been set from 0 to 20 while \( \lambda \) ranges from 0 to 10:</p>
+<p>Here, the x-axis has been set from 0 to 20 while \( \lambda \) ranges from 0 to 10:</p>
 
 </body>
 
