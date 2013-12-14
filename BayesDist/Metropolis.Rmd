@@ -1,4 +1,4 @@
-<img src="http://images1.wikia.nocookie.net/__cb20120728230149/smallville/images/8/89/Metropolis2013.png" width="275" height="150" align="left" style="margin-right: 20px;">
+<img src="http://images1.wikia.nocookie.net/__cb20120728230149/smallville/images/8/89/Metropolis2013.png" width="265" height="145" align="left" style="margin-right: 20px;">
 
 In hierarchical Bayesian modeling, the high number of priors often makes deriving the posterior density difficult. A possible solution is a Markov chain Monte Carlo (MCMC) simulation. For $Y$, a set of complicated prior parameters, and $X=x$, an observed set of data, MCMC involves taking a chain of samples ($y_1,y_2,...,y_n$) from a distribution $\neq f(y|x)$, whereby the samples are dependent upon one another (i.e., $y_{i+1}$ depends on $y_i$). A couple criteria allow this chain to approximate the posterior $f(y|x)$, also known as the target density:
 
@@ -6,8 +6,9 @@ In hierarchical Bayesian modeling, the high number of priors often makes derivin
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; The time spent at each $y$ value must be proportional to $f(y|x)$
 
-The chain of $y$ values then takes on the shape of a random sample from $f(y|x)$. Once this chain is large enough, we can approximate the posterior density of $f(y|x)$.
+The chain of $y$ values then takes on the shape of a random sample from $f(y|x)$. Once this chain is large enough, we can use it approximate the posterior density of $f(y|x)$.
 
+<br>
 Consider the following example:
 
 <img src="http://www.nrcs.usda.gov/Internet/FSE_MEDIA/stelprdb1049230.jpg" style="float:right" width="350" height="175">
@@ -20,13 +21,11 @@ $f(y|7.5,.15) \propto y^{6.5}e^{-.15y}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>for</b
 
 </center>
 
-Ross intends his time spent working on each acre to be proportional to its relative plant density. How can a Metropolis Algorithm simulate Ross's work schedule?
+Ross intends his time spent working on each acre to be proportional to its relative plant growth density. How can a Metropolis Algorithm simulate Ross's work schedule?
 
 Let $y$ start at acre $50$:
 
 For each day, we propose a new acre to Ross from some symmetric distribution, $N(\mu,\sigma)$:
-
-<i>set.seed(2000)</i>
 
 <i> y1 = 50 </i>
 
@@ -38,14 +37,14 @@ Ross then compares the plant growth of the new acre to that of the acre he is cu
 
 If the plant growth of the new acre > old acre, Ross will always switch to the new acre. This is reflected in the command <i>min (1...)</i>. If the plant growth of the new acre > current acre, <i>min(1...)</i> will always select 1, a probability of 100%.
 
-If the plant growth of the new acre < current acre, Ross will switch based on the probability generated from $\frac{plant \ growth \ of \ new \ acre}{plant \ growth \ of \ current \ acre}$: simulated by: <i> dgamma(f1,s=7.5,r=.15)/dgamma(y1,s=7.5,r=.15) </i>. 
+If the plant growth of the new acre < current acre, Ross will switch based on the probability generated from $\frac{plant \ growth \ of \ new \ acre}{plant \ growth \ of \ current \ acre}$: simulated by: <i> dgamma(f1,s=7.5,r=.15)/dgamma(y1,s=7.5,r=.15)</i>. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Note that Ross's decision to work on the new acre depends on the plant growth of his current acre
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Note that Ross's decision to work on the new acre depends on the plant growth of his current acre.
 
 Ross's potential acceptance of the new acre can be simulated as:
 
 <i> p2 = sample(c(f1,y1),size=1,prob(paccept,1-paccept))</i>
 
-As the days pass, we propose new acres to Ross who then compares them to his current acre, making for a cyclical algorithm that after enough samples approximates $P \sim Gamma (7.5, .15)$. 
+As the days pass, we propose new acres to Ross who then compares them to his current acre, making for a cyclical algorithm that after enough samples approximates $P \sim Gamma (7.5, .15)$, our target density. 
 
-Here, the number of samples has been set from 100 to 10,000. $\sigma$ alters the standard deviation of the acres proposed to Ross.
+Here, the sample has been set from 100 to 10,000. $\sigma$ ranges from 5 to 75 alters the standard deviation of the acres proposed to Ross. Users can choose to view the sample of acres Ross visits, a histogram of the sample, or the running sample mean. The table below the plot provides the acceptance rate for acres proposed to Ross. Further descriptions are provided in the textboxes above and below the plot depending upon the plot chosen. 

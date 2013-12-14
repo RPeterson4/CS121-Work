@@ -1,0 +1,1 @@
+Here is the running sample mean for the acres that Ross has visited. Click the checkbox "Show error bars" to display the margin of error for the running sample mean. The checkbox "Show true mean" adds the mean of the target density (50) as a horizontal line to the plot, highlighted in blue. How large must the sample be for the running mean to stabilize?
