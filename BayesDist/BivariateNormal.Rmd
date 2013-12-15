@@ -22,7 +22,7 @@ $X$ and $Y$ then have the corresponding joint probability density function:
 
 \[f(x,y) =\frac{1}{2\pi}|\Sigma|^{\frac{-1}{2}}exp\left\{ -\frac{1}{2}(x-\mu_x,y-\mu_y)\Sigma^{-1}\left(\begin{array}{cc}
 x-\mu_x \\
-y-\mu_y \end{array} \right)\right\} \] <center> <b>for</b> &nbsp;&nbsp; $\infty < x,y < \infty$ &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; $-1\leq \rho \leq 1$</center>
+y-\mu_y \end{array} \right)\right\} \]<center><b>for</b> &nbsp;&nbsp; $\infty < x,y < \infty$ &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; $-1\leq \rho \leq 1$</center>
 
 whereby $|\Sigma|$ is the determinant of the covariance matrix $\Sigma$ and $\Sigma^{-1}$ is the matrix inverse.
 

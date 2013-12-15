@@ -20,6 +20,7 @@ Once we have observed some number of trials, $n$, we can add these observations 
 
 <center> $f(p|X) = f(X|p)*f(p)$</center>
 
+<br>
 As ${n \choose x}$ for the Binomial Distribution is a constant, we can exclude it from our multiplication of the two probability functions. The probability density function of the Beta posterior of $p$ is then derived as:
 
 <center>$f(p|X) \propto p^x (1-p)^{n-x} * p^{a-1}(1-p)^{b-1} = p^{x+a-1}(1-p)^{n-x+b-1}$

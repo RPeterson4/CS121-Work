@@ -1,4 +1,4 @@
-<img src="http://i.stack.imgur.com/T2XrE.gif" width="250" height="375" align="left" style="margin-right: 20px;">
+<img src="http://i.stack.imgur.com/T2XrE.gif" width="265" height="400" align="left" style="margin-right: 20px;">
 
 Gibbs Samplers are often preferable to Metropolis algorithms for multivariate target densities. The key difference is that Gibbs Samplers update our location one variable at a time, whereas Metropolis algorithms update our location using all variables at once (as a group).
 

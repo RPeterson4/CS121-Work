@@ -1,4 +1,4 @@
-<img src="http://www.pepijnvanerp.nl/wordpress/wp-content/uploads/2012/05/xkcd-p-value-xs.png" width="200" height="300" align="left" style="margin-right: 20px;">
+<img src="http://www.pepijnvanerp.nl/wordpress/wp-content/uploads/2012/05/xkcd-p-value-xs.png" width="200" height="285" align="left" style="margin-right: 20px;">
 
 Recall the Poisson Distribution, used to model the number of occurrences of an event, $X$, over an interval of time, whereby $\lambda$ is the expected number of occurrences over the interval. Given $\lambda$, let $X_1, X_2,...,X_n$ be a random sample from $Pois(\lambda)$. For example, the $X_i$ are the number of children born each week for $n$ different weeks and $\lambda$ is the weekly birth rate. Let $x=(x_1,x_2,...,x_n)$ be the observed values of $(X_1,X_2,...,X_n)$. Given $\lambda$, the Poisson Distribution for $X_1,X_2,...,X_n$ is:
 

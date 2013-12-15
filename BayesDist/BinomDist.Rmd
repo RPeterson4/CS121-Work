@@ -1,4 +1,4 @@
-<img src="http://winetastingguy.com/wp-content/uploads/2008/08/coin-flip.jpg" width="300" height="300" align="left" style="margin-right: 20px;"> 
+<img src="http://winetastingguy.com/wp-content/uploads/2008/08/coin-flip.jpg" width="325" height="310" align="left" style="margin-right: 20px;"> 
 
 The Binomial Distribution is used to model the number of times an event occurs, $X$, over $n$ trials whereby $p$ is some probability of success (i.e., the event occurs). An example would be flipping a coin 10 times ($n$), whereby each heads is a success and each tails is a failure. In this case, $p=.5$ because we are using a fair coin. The Binomial Distribution has three assumptions:
 
