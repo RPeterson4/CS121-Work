@@ -32,6 +32,8 @@ Substituting in our values, we can then make a Gibbs Sampler with the following 
 
 Repeating the steps then approximates the bivariate normal target density after enough trials.
 
-On the other hand, a Metropolis Algorithm would draw $u'$ and $v'$ from some other distribution before comparing $\frac{f(u',v')}{f(u,v)}$ to make a move.
+On the other hand, a Metropolis Algorithm would draw both $u'$ and $v'$ from some other distribution before comparing $\frac{f(u',v')}{f(u,v)}$ to make a move.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Notice that the Gibbs Sampler only takes $n$ trials as an input, whereas the Metropolis algorithm requires $n$ as well as $\sigma_u$ and $\sigma_v$ (the standard deviations for the variables needed to propose a new location).
+
+Here, $n$ ranges from 10 to 1,000 while $\sigma_u$ and $\sigma_v$ each range from .1 to 2. How does the Gibbs Sampler and Metropolis Algorithm compare? Which values of $\sigma_u$ and $\sigma_v$ best approximate the Gibbs Sampler?

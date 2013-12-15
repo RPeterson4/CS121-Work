@@ -45,4 +45,4 @@ Lastly, the website explains and implements a couple techniques for handling com
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; The Gibbs Sampler 
 
-<i> Bayesland is a MATH 353 Capstone Project by Ross Peterson, Macalester College. </i>
+<i> Bayesland is a Fall 2013 MATH 353 Capstone Project by Ross Peterson, Macalester College Class of 2015. </i>
