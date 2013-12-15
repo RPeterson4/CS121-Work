@@ -54,4 +54,6 @@ Lastly, the website explains and implements a couple advanced Bayesian models:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; The Gibbs Sampler 
 
+Note that for all univariate distributions, the y-axis is a function of x.
+
 <i> Bayesland is a Fall 2013 MATH 353 Capstone Project by Ross Peterson, Macalester College Class of 2015. </i>
