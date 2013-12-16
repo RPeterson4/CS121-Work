@@ -16,12 +16,12 @@ whereby $P$ has the corresponding probability density function:
 
 <center>$f(p|a,b)= cp^{a-1}(1-p)^{b-1}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $0 \leq p \leq 1$</center>
 
-Once we have observed some number of trials, $n$, we can add these observations to our prior beliefs about $p$. Both the Binomial data model and the Beta prior can then be combined into a posterior distribution of $p$, categorized as a conjugate Beta posterior. By multiplying the Binomial data model and the Beta prior together, we can derive the Beta posterior of $p|X$:
+Once we have observed some number of trials, $n$, we can add these observations to our prior beliefs about $p$. Both the Binomial data model and the Beta prior can then be combined into a posterior distribution of $p$, categorized as a conjugate Beta posterior. By multiplying the Binomial data model and the Beta prior together, we can derive the Beta posterior $p|X$:
 
 <center> $f(p|X) = f(X|p)*f(p)$</center>
 
 <br>
-As ${n \choose x}$ for the Binomial Distribution is a constant, we can exclude it from our multiplication of the two probability functions. The probability density function of the Beta posterior of $p$ is then derived as:
+As ${n \choose x}$ for the Binomial Distribution is a constant, we can exclude it from our multiplication of the two probability functions. The probability density function of the Beta posterior $p|X$ is then derived as:
 
 <center>$f(p|X) \propto p^x (1-p)^{n-x} * p^{a-1}(1-p)^{b-1} = p^{x+a-1}(1-p)^{n-x+b-1}$
 
@@ -33,7 +33,7 @@ The Beta Posterior Distribution of $p|X$ is then:
 
 <center>$p|X \sim Beta(a+x, n-x+b)$</center>
 
-The mean and variance for the Beta Posterior of $p$ can be calculated as:
+The mean and variance for the Beta Posterior $p|X$ can be calculated as:
 
 <center>$E(p|X)=\frac{a+x}{a+b+n}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(p|X) = \frac{(a+x)(n-x+b)}{(a+b+n)^2(a+b+n+1)}$
 </center>

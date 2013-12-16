@@ -16,7 +16,7 @@ whereby $\lambda$ has the corresponding probability density function:
 
 <center>$f(\lambda|s,r) \propto \lambda^{s-1}e^{-r\lambda}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $\lambda > 0$ <b>,</b> &nbsp;&nbsp; $s > 0$ <b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; $r >0$ </center>
 
-Once we have observed some random sample of $X_i$, we can add this sample to our prior beliefs about $\lambda$. Both the Poisson data model and the Gamma prior can then be combined into a posterior distribution of $\lambda$, categorized as a conjugate Gamma posterior. By multiplying the Poisson data model and the Gamma prior together, we can derive the probability density function of the Gamma posterior of $\lambda$:
+Once we have observed some random sample of $X_i$, we can add this sample to our prior beliefs about $\lambda$. Both the Poisson data model and the Gamma prior can then be combined into a posterior distribution of $\lambda$, categorized as a conjugate Gamma posterior. By multiplying the Poisson data model and the Gamma prior together, we can derive the probability density function of the Gamma posterior $\lambda|X_i$:
 
 <img src="http://web.ics.purdue.edu/~jltobias/BayesClass/peanuts.jpg" style="float:right" width="325" height="225">
 
