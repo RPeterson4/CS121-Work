@@ -173,13 +173,13 @@ hr {
 
 <p>&nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( \lambda > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; \( r>0 \) <b>,</b> &nbsp;&nbsp; \( x_i \in \{1,2,...n\} \)<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( \lambda >0 \)</center></p>
 
-<p>The Gamma Posterior Distribution of \( \lambda \) is then:</p>
+<p>The Gamma Posterior Distribution of \( \lambda|X_i \) is then:</p>
 
 <p><center>\( \lambda|x_1,x_2,...,x_n \sim Gamma(s+\sum\limits_{i=1}^nx_i,r+n) \)</center></p>
 
-<p>The mean and variance for the Gamma Posterior of \( \lambda \) can be calculated as:</p>
+<p>The mean and variance for the Gamma Posterior of \( \lambda|X_i \) can be calculated as:</p>
 
-<p><center>\( E(X)=\frac{s+\sum\limits_{i=1}^nx_i}{r+n} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(X)=\frac{s+\sum\limits_{i=1}^nx_i}{(r+n)^2} \)</center></p>
+<p><center>\( E(\lambda|X_i)=\frac{s+\sum\limits_{i=1}^nx_i}{r+n} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(\lambda|X_i)=\frac{s+\sum\limits_{i=1}^nx_i}{(r+n)^2} \)</center></p>
 
 <p>Here, \( s \) ranges from 200 to 300 and \( r \) from 4 to 8. The poisson distribution takes a sum of \( x_i \) values ranging from 20 to 300, as well as a value of \( n \) trials ranging from 1 to 10. The layout is highly similar to the Beta Binomial. The Gamma prior is already on the plot, highlighted in red. The frequentist estimate of \( \lambda \), \( \frac{\sum\limits_{i=1}^nx_i}{n} \), can be added as a vertical line to the plot via the coordinating checkbox, highlighted in blue. The Gamma posterior can be added to the plot via a checkbox as well, highlighted in purple. The frequentist estimate of \( \lambda \) is provided in a table, as are both the Gamma prior and Gamma posterior means and variances. </p>
 

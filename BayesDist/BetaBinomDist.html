@@ -163,7 +163,7 @@ hr {
 
 <p><center>\( f(p|a,b)= cp^{a-1}(1-p)^{b-1} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( 0 \leq p \leq 1 \)</center></p>
 
-<p>Once we have observed some number of trials, \( n \), we can add these observations to our prior beliefs about \( p \). Both the Binomial data model and the Beta prior can then be combined into a posterior distribution of \( p \), categorized as a conjugate Beta posterior. By multiplying the Binomial data model and the Beta prior together, we can derive the Beta posterior of \( p \):</p>
+<p>Once we have observed some number of trials, \( n \), we can add these observations to our prior beliefs about \( p \). Both the Binomial data model and the Beta prior can then be combined into a posterior distribution of \( p \), categorized as a conjugate Beta posterior. By multiplying the Binomial data model and the Beta prior together, we can derive the Beta posterior of \( p|X \):</p>
 
 <p><center> \( f(p|X) = f(X|p)*f(p) \)</center></p>
 
@@ -176,7 +176,7 @@ As \( {n \choose x} \) for the Binomial Distribution is a constant, we can exclu
 
 <p><img src="http://i1.cpcache.com/product_zoom/683200970/feeling_marginally_significant_mug.jpg?height=460&width=460&padToSquare=true" width="275" height="250" align="right"></p>
 
-<p>The Beta Posterior Distribution of \( P \) is then:</p>
+<p>The Beta Posterior Distribution of \( p|X \) is then:</p>
 
 <p><center>\( p|X \sim Beta(a+x, n-x+b) \)</center></p>
 

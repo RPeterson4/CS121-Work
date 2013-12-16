@@ -16,7 +16,7 @@ whereby $P$ has the corresponding probability density function:
 
 <center>$f(p|a,b)= cp^{a-1}(1-p)^{b-1}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $0 \leq p \leq 1$</center>
 
-Once we have observed some number of trials, $n$, we can add these observations to our prior beliefs about $p$. Both the Binomial data model and the Beta prior can then be combined into a posterior distribution of $p$, categorized as a conjugate Beta posterior. By multiplying the Binomial data model and the Beta prior together, we can derive the Beta posterior of $p$:
+Once we have observed some number of trials, $n$, we can add these observations to our prior beliefs about $p$. Both the Binomial data model and the Beta prior can then be combined into a posterior distribution of $p$, categorized as a conjugate Beta posterior. By multiplying the Binomial data model and the Beta prior together, we can derive the Beta posterior of $p|X$:
 
 <center> $f(p|X) = f(X|p)*f(p)$</center>
 
@@ -29,7 +29,7 @@ As ${n \choose x}$ for the Binomial Distribution is a constant, we can exclude i
 
 <img src="http://i1.cpcache.com/product_zoom/683200970/feeling_marginally_significant_mug.jpg?height=460&width=460&padToSquare=true" width="275" height="250" align="right">
 
-The Beta Posterior Distribution of $P$ is then:
+The Beta Posterior Distribution of $p|X$ is then:
 
 <center>$p|X \sim Beta(a+x, n-x+b)$</center>
 
