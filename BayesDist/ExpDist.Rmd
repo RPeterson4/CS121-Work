@@ -10,8 +10,8 @@ whereby $X$ has the corresponding probability density function:
 
 The mean and variance for $X$ can be calculated as:
 
-<center> $E(X|\lambda) = \frac{1}{\lambda}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X|\lambda)=\frac{1}{\lambda^2}$ </center>
+<center> $E(X) = \frac{1}{\lambda}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X)=\frac{1}{\lambda^2}$ </center>
 
-Notice that both $E(X|\lambda)$ and $Var(X|\lambda)$ are inversely related to $\lambda$. As $\lambda$ increases, both $E(X|\lambda)$ and $Var(X|\lambda)$ decrease (i.e.,waiting time,$X$, decreases).
+Notice that both $E(X)$ and $Var(X)$ are inversely related to $\lambda$. As $\lambda$ increases, both $E(X)$ and $Var(X)$ decrease (i.e.,waiting time,$X$, decreases).
 
 Here, the x-axis has been set from 0 to 5 while $\lambda$ ranges from 0 to 2.

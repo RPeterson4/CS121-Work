@@ -10,8 +10,8 @@ whereby $X$ has the corresponding probability density function:
 
 The mean and variance for $X$ can be calculated as:
 
-<center>$E(X|s,r) = \frac{s}{r}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X|s,r) = \frac{s}{r^2}$  </center>
+<center>$E(X) = \frac{s}{r}$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Var(X) = \frac{s}{r^2}$  </center>
 
-Notice that both $E(X|s,r)$ and $Var(X|s,r)$ are directly related to $s$ and inversely related to $r$. That is, as $s$ increases, both $E(X|s,r)$ and $Var(X|s,r)$ increase. But as $r$ increases, both $E(X|s,r)$ and $Var(X|s,r)$ decrease.
+Notice that both $E(X)$ and $Var(X)$ are directly related to $s$ and inversely related to $r$. That is, as $s$ increases, both $E(X)$ and $Var(X)$ increase. But as $r$ increases, both $E(X)$ and $Var(X)$ decrease.
 
 Here, the x-axis has been set from 0 to 100 while $s$ ranges from 200 to 300 and $r$ from 3 to 7.
