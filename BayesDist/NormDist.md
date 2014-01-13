@@ -6,7 +6,7 @@ The Normal Distribution (aka, the "bell curve") is often used for both modeling 
 
 whereby $X$ has the corresponding probability density function:
 
-<center> $f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}exp\{{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}\}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp;  $\infty < x < \infty$<b>,</b> &nbsp;&nbsp; $\mu >0$<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; $\sigma >0$ </center>
+<center> $f(x|\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}exp\{{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}\}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp;  $-\infty < x < \infty$<b>,</b> &nbsp;&nbsp; $\mu >0$<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; $\sigma >0$ </center>
 
 The mean and variance for $X$ can be calculated as:
 
