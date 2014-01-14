@@ -8,7 +8,7 @@ whereby $X_i|\lambda$ has the corresponding probability mass function:
 
 <center> $f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $x_i \in \{1,2,...n\}$ &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; $\lambda>0$</center>
 
-Above is the frequentist data model of $\lambda$. Notice that $\sum\limits_{i=1}^nx_i$ is the sum of the $X_i$ values. For Bayesian statisticians, though, the data model is only half the equation. Often we have some prior belief about the distribution of $\lambda$, which can be represented by the following Gamma Distribution:
+Above is the data model, the focus of frequentist statistics. Notice that $\sum\limits_{i=1}^nx_i$ is the sum of the $X_i$ values. In Bayesian statistics, though, the data model is only half the equation. Often we have some prior belief about the distribution of $\lambda$, which can be represented by the following Gamma Distribution:
 
 <center> $\lambda \sim Gamma(s,r)$</center>
 
@@ -20,7 +20,7 @@ Once we have observed some random sample of $X_i$, we can add this sample to our
 
 <img src="http://web.ics.purdue.edu/~jltobias/BayesClass/peanuts.jpg" style="float:right" width="325" height="225">
 
-<center> $f(\lambda|x_1,x_2,...x_n) = f(x_1,x_2,...x_n|\lambda)*f(\lambda$)
+<center> $f(\lambda|x_1,x_2,...x_n) \propto f(x_1,x_2,...x_n|\lambda)*f(\lambda$)
 
 $f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda}*\lambda^{s-1}e^{-r\lambda}$ =$\lambda^{(s-1)+\sum\limits_{i=1}^nx_i}e^{-(n+r)\lambda}$
 
@@ -29,6 +29,8 @@ $f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda}
 The Gamma Posterior Distribution of $\lambda|X_i$ is then:
 
 <center>$\lambda|x_1,x_2,...,x_n \sim Gamma(s+\sum\limits_{i=1}^nx_i,r+n)$</center>
+
+Note that the prior and posterior are both part of the same family, namely the Gamma Distribution, and as such are conjugate distributions.
 
 The mean and variance for the Gamma Posterior of $\lambda|X_i$ can be calculated as:
 
