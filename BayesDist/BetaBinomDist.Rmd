@@ -31,7 +31,7 @@ As ${n \choose x}$ for the Binomial Distribution is a constant, we can exclude i
 
 The Beta Posterior Distribution of $p|X$ is then:
 
-<center>$p|x = x \sim Beta(a+x, n-x+b)$</center>
+<center>$p|X = x \sim Beta(a+x, n-x+b)$</center>
 
 Note that the prior and posterior are both part of the same family, namely the Beta Distribution. In Bayesian terminology, a prior and a posterior of the same family are called conjugate distributions.
 
