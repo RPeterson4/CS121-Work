@@ -28,7 +28,9 @@ $F_1 \sim N(Y_1,10^2)$
 
 Ross then compares the plant growth of the new acre to that of the acre he is currently working on:
 
-If the plant growth of the new acre > old acre, Ross will always switch to the new acre (i.e., $P_{accept}=1$). If the plant growth of the new acre < current acre, Ross will switch based on the probability generated from the above fraction, $P_{accept} = \frac{Gamma(F_1,7.5,.15)}{Gamma(Y_1,7.5,.15)}$.
+$P_{accept} = \frac{Gamma(F_1,7.5,.15)}{Gamma(Y_1,7.5,.15)}$
+
+If the plant growth of the new acre > old acre, Ross will always switch to the new acre (i.e., $P_{accept}=1$). If the plant growth of the new acre < current acre, Ross will switch based on the probability generated from the above fraction.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Note that Ross's decision to work on the new acre depends on the plant growth of his current acre.
 
