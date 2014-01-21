@@ -8,6 +8,7 @@ Consider the following example:
 
 <img src="http://www.nrcs.usda.gov/Internet/FSE_MEDIA/stelprdb1049230.jpg" style="float:right" width="350" height="175">
 
+<br>
 Ross presides over continuous farmland. Let $Y>0$ be the distance from Ross's barn and $f(y)$ be the plant growth density at acre $y$ such that:
 
 <center> $Y \sim Gamma (7.5, .15)$ 
