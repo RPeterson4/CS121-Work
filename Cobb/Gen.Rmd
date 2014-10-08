@@ -1,0 +1,78 @@
+Firms often intend to maximize production from a limited amount of labor and capital.
+A Cobb-Douglas production function can help find the optimal amount of labor and capital necessary to maximize production:
+
+<center> $Y=AL^BK^a$ </center>
+
+whereby: 
+
+<center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $Y$ = total production
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $L$ = the labor used
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $K$ = the capital used
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $A$ = total factor productivity
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $B$ = output elasticity of labor (i.e., the productivity of labor)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $a$ = output elasticity of capital (i.e., the productivity of capital) </center>
+
+However, firms also often have budget constraints on the use of labor and capital, such as:
+
+<center> $pL + qK = C$</center>
+
+whereby:
+
+<center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $p$ = the price of labor 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $q$ = the price of capital
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $C$ = the budget of the firm
+</center>
+
+Consider a firm whose production function is given by:
+
+<center> $Y=6L^{.25}K^{.75}$ </center>
+
+and whose budget constraint is given by:
+
+<center> $5L + 4K = 600$</center>
+
+How can Lagrange multipliers find the optimal capital and labor necessary to maximize production for this firm?
+
+We are interested in computing $gradY=\lambda gradC$. We'll need to compare $Y_L$ to $C_L$ and $Y_K$ to $C_K$ for both equations:
+
+<center> $Y_L = \lambda C_L$
+
+$1.5L^{-.75}K^{.75}=5\lambda$
+
+$Y_K = \lambda C_K$
+
+$4.5L^{.25}K^{-.25}=4\lambda$
+</center>
+
+Solving for lambda and setting the two equations equal to each other gives:
+
+<center> $\frac{1.5L^{-.75}K^{.75}}{5}=\frac{4.5L^{.25}K^{-.25}}{4}$ </center>
+
+By simplifying and rearranging the equation we can solve for capital in terms of labor:
+
+<center> $K=3.75L$ </center>
+
+Then we substitute $K$ in terms of labor back into our budget constraint and solve for $L$:
+
+<center> $5L + 4(3.75L) = 600$
+
+$L = 30$ </center>
+
+Knowing $L$ we solve for $K$:
+
+<center> $K = 3.75(30)$
+
+$K=112.5$ </center>
+
+Lastly, we plug in our values of $L$ and $K$ to determine our total production:
+
+<center> $6(30)^{.25}* (112.5)^{.75} = 485.06$</center>
+
+And voila! Lagrange multipliers have helped us determine that 30 labor and 112.5 capital will achieve the optimized total production of 485.06.
+
+<i> Lagrange Multipliers is a MATH 237 project by Ross Peterson and Jingjia Liu. </i>

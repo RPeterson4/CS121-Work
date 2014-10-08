@@ -1,0 +1,43 @@
+# Oct 1, 2013
+
+## Reverser
+
+```{r}
+reverse2 <- function(input){
+  input2 <- strsplit(input,split=character(0))
+  input3 <- input2[[1]][nchar(input):1]
+  return(paste(input3,collapse=""))}
+
+reverse2("shadow")
+
+scramble <- function(input){
+  input2 <- strsplit(input,split=character(0))
+  input3 <- input2[[1]][sample(nchar(input):1)]
+  return(paste(input3,collapse=""))}
+
+scramble("shadow")
+scramble("shadow")
+ 
+VowelBleeper <- function(input){
+ superSub <- gsub("[aeiou]","*", input)
+ return(superSub)
+}
+
+VowelBleeper("shadow")
+
+L33t <- function(input){
+  gsub1 <- gsub("e","3",input)
+  gsub2 <- gsub("o","0",gsub1)
+  gsub3 <- gsub("s","5",gsub2)
+  gsub4 <- gsub("g","9",gsub3)
+  return(gsub4)
+}
+
+L33t("shadow")
+
+cypher <- function(input){
+  supercypher <- chartr("abcdefghijklmnopqrstuvwxyz","mnopqrstuvwxyzabcdefghijkl",input)
+  return(supercypher)}
+
+cypher("shadow")
+```

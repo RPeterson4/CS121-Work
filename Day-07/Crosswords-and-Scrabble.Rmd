@@ -1,0 +1,97 @@
+```{r}
+words <- readLines(url("http://dtkaplan.github.io/ScientificComputing/Syllabus/Daily/Day-07/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt"))
+
+findpat<- function(a){
+  return(length(words[grep(a,words)]))
+}
+
+##Number of words that have only one letter
+findpat("^.$")
+
+##Number of words that have only two letters
+findpat("^..$")
+
+##Number of words that have only three letters
+findpat("^...$")
+
+
+##Number of words that start with the letter a
+findpat("^a")
+
+##Number of words that start with the letter b
+findpat("^b")
+
+##Number of words that start with the letter c
+findpat("^c")
+
+##Number words with q but no u
+findpat("q[^u]")
+
+## 100 longest words
+topnumwords <- function(n){
+results <- c()
+topword <- c()
+for (topword in words){
+  ind <-  which.max(nchar(words)) 
+  topword <- words[ind]
+  words <- words[-ind]
+  results <- c(results, topword)
+  if (length(results)>=n)
+    break
+}
+return(results)
+}
+
+topnumwords(100)
+
+##Crossword Helper
+crossword <- function(pattern){
+  matched <- grep(pattern,words)
+  return((words)[matched])
+}
+
+crossword("quarter")
+
+##A better crossword helper
+crosswordPattern <- function(v,numchar){
+  scrabstr  <- rep(".",numchar)
+  scrabstr[v] <- names(v)
+  scrabstr2 <- paste("^",paste(scrabstr,collapse=""),"$",sep="")
+matched2 <- grep(scrabstr2,words)
+return(words[matched2])
+}
+
+crosswordPattern(c(q=1,s=7),7)
+```
+![Pic](http://ec2-54-218-188-239.us-west-2.compute.amazonaws.com:8787/files/CS121-Work/Day-09/Crossword2.png)
+```{r}
+## 9 Across, "Slow moving and has a shell
+
+crosswordPattern(c(t=1,r=3,l=5),6)
+
+## 8 Across, "Lives in the cold and waddles"
+
+crosswordPattern(c(n=3,n=7),7)
+
+scrabble <- function(rack){
+  splitword <- strsplit(rack,split=character(0))[[1]]
+  search <- c()
+  for (k in 1:length(splitword)){
+    search <- splitword[k]
+    words <- words[grep(search,words)]
+  }
+  results <- c()
+  topword <- c()
+  for (topword in words){
+    ind <-  which.max(nchar(words)) 
+    topword <- words[ind]
+    words <- words[-ind]
+    results <- c(results, topword)
+    if (length(results)>=10)
+      break
+  }
+  return(results)
+}
+
+scrabble("zanebla")
+```

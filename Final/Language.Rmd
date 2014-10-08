@@ -1,0 +1,34 @@
+```{r}
+require(mosaic)
+fetchData("COMP121/word-hints.R")
+
+letterProportion<- function(input){
+input2 <- unlist(strsplit(tolower(input),split=character(0))) 
+total <- length(input2)
+ans<-c()
+for (k in 1:total){
+  prop<-table(input2[[k]][1])/total
+  ans <- c(ans,prop) 
+}
+return(ans)
+}
+
+letterProportion("string")
+
+freqCompare <- function(lang,input){
+  diff<-function(input){letterProportion(input)}-lang ##diff in frequencies
+  square <- sum(diff)^2/sum(lang) ##square and divide
+  return(square)
+}
+
+whichLanguage <- function(string,langlist){
+  ans <- c()
+  for (k in 1:length(langlist)){
+  diff<-function(input){letterProportion(string)}-langlist[k]
+  square <- sum(diff)^2/sum(lang)
+  ans <- c(ans,square)
+  }
+return(min(ans))
+}
+
+```

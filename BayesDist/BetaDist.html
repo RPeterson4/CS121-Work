@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<p><img src="http://media.cagle.com/6/2008/02/27/48139_600.jpg" width="225" height="305" align="left"></p>
+
+<p>The Beta Distribution is used to model proportions and probabilities, and as such is defined from 0 to 1. For \( X \), a proportion or probability, the Beta Distribution is:</p>
+
+<p><center> \( X \sim Beta(a,b) \)</center></p>
+
+<p>whereby \( X \) has the corresponding probability density function:</p>
+
+<p><center>\( f(x|a,b)= cx^{a-1} (1-x)^{b-1} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( 0 \leq x \leq 1 \) </center></p>
+
+<p>\( c \) is a normalizing constant that ensures that the probability density function integrates to 1 (i.e., \( \int_0^1 f(x|a,b)dx =1 \)). \( c \) is equivalent to:</p>
+
+<p><center> \( c = \frac{1}{\int_0^1x^{a-1}(1-x)^{b-1}dx} \)</center></p>
+
+<p>The mean and variance for \( X \) can be calculated as:</p>
+
+<p><center> \( E(X)= \frac{a}{a+b} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(X)=\frac{ab}{(a+b)^2(a+b+1)} \)</center></p>
+
+<p>Notice that \( E(X) \) is directly related to \( a \) and inversely related to \( b \). That is, as \( a \) increases, \( E(X) \) increases. But as \( b \) increases, \( E(X) \) decreases.</p>
+
+<p>Here, \( a \) and \( b \) each range from 0 to 10.</p>
+
+</body>
+
+</html>
+

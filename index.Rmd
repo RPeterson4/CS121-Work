@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 # Hello World
+=======
+# Ross's Front Page
+## An index to my assignments
+
+>>>>>>> 4e469b3959b0303050fbe41f0587c911715be4b6

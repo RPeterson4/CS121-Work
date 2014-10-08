@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title></title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<p><img src="http://www.pepijnvanerp.nl/wordpress/wp-content/uploads/2012/05/xkcd-p-value-xs.png" width="200" height="260" align="left" style="margin-right: 20px;"></p>
+
+<p>Recall the Poisson Distribution, used to model the number of occurrences of an event, \( X \), over an interval of time, whereby \( \lambda \) is the expected number of occurrences over the interval. Given \( \lambda \), let \( X_1, X_2,...,X_n \) be a random sample from \( Pois(\lambda) \). For example, the \( X_i \) are the number of children born each week for \( n \) different weeks and \( \lambda \) is the weekly birth rate. Let \( x=(x_1,x_2,...,x_n) \) be the observed values of \( (X_1,X_2,...,X_n) \). Given \( \lambda \), the Poisson Distribution for \( X_1,X_2,...,X_n \) is:</p>
+
+<p><center>\( X_i|\lambda \sim Pois(\lambda) \)</center></p>
+
+<p>whereby \( X_i|\lambda \) has the corresponding probability mass function:</p>
+
+<p><center> \( f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( x_i \in \{1,2,...n\} \) &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; \( \lambda>0 \)</center></p>
+
+<p>Above is the data model, the focus of frequentist statistics. Notice that \( \sum\limits_{i=1}^nx_i \) is the sum of the \( X_i \) values. In Bayesian statistics, though, the data model is only half the equation. Often we have some prior belief about the distribution of \( \lambda \), which can be represented by the following Gamma Distribution:</p>
+
+<p><center> \( \lambda \sim Gamma(s,r) \)</center></p>
+
+<p>whereby \( \lambda \) has the corresponding probability density function:</p>
+
+<p><center>\( f(\lambda|s,r) \propto \lambda^{s-1}e^{-r\lambda} \) &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( \lambda > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( r >0 \) </center></p>
+
+<p>Once we have observed some random sample of \( X_i \), we can add this sample to our prior beliefs about \( \lambda \). Both the Poisson data model and the Gamma prior can then be combined into a posterior distribution of \( \lambda \), categorized as a conjugate Gamma posterior. By multiplying the Poisson data model and the Gamma prior together, we can derive the probability density function of the Gamma posterior \( \lambda|X_i \):</p>
+
+<p><img src="http://web.ics.purdue.edu/~jltobias/BayesClass/peanuts.jpg" style="float:right" width="325" height="225"></p>
+
+<p><center> \( f(\lambda|x_1,x_2,...x_n) \propto f(x_1,x_2,...x_n|\lambda)*f(\lambda \))</p>
+
+<p>\( f(x_1,x_2,...x_n|\lambda) \propto \lambda^{\sum\limits_{i=1}^nx_i}e^{-n\lambda}*\lambda^{s-1}e^{-r\lambda} \) =\( \lambda^{(s-1)+\sum\limits_{i=1}^nx_i}e^{-(n+r)\lambda} \)</p>
+
+<p>&nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; \( \lambda > 0 \) <b>,</b> &nbsp;&nbsp; \( s > 0 \) <b>,</b> &nbsp;&nbsp; \( r>0 \) <b>,</b> &nbsp;&nbsp; \( x_i \in \{1,2,...n\} \)<b>,</b> &nbsp;&nbsp; <b> and </b> &nbsp;&nbsp; \( \lambda >0 \)</center></p>
+
+<p>The Gamma Posterior Distribution of \( \lambda|X_i \) is then:</p>
+
+<p><center>\( \lambda|x_1,x_2,...,x_n \sim Gamma(s+\sum\limits_{i=1}^nx_i,r+n) \)</center></p>
+
+<p>Note that the prior and posterior are both part of the same family, namely the Gamma Distribution, and as such are conjugate distributions.</p>
+
+<p>The mean and variance for the Gamma Posterior of \( \lambda|X_i \) can be calculated as:</p>
+
+<p><center>\( E(\lambda|X_i)=\frac{s+\sum\limits_{i=1}^nx_i}{r+n} \) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> and </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \( Var(\lambda|X_i)=\frac{s+\sum\limits_{i=1}^nx_i}{(r+n)^2} \)</center></p>
+
+<p>Here, \( s \) ranges from 200 to 300 and \( r \) from 4 to 8. The poisson distribution takes a sum of \( x_i \) values ranging from 20 to 300, as well as a value of \( n \) trials ranging from 1 to 10. The layout is highly similar to the Beta Binomial. The Gamma prior is already on the plot, highlighted in red. The frequentist estimate of \( \lambda \), \( \frac{\sum\limits_{i=1}^nx_i}{n} \), can be added as a vertical line to the plot via the coordinating checkbox, highlighted in blue. The Gamma posterior can be added to the plot via a checkbox as well, highlighted in purple. The frequentist estimate of \( \lambda \) is provided in a table, as are both the Gamma prior and Gamma posterior means and variances. </p>
+
+<p>After the Gamma posterior has been plotted, the table below the plot calculates the 95% credible interval for \( \lambda \) (i.e., there is a 95% chance that \( \lambda \) falls within the range calculated). Hypothesis tests are also available for calculating regions beneath the curve of the posterior. Users can change the minimum and maximum values of the region of integration, each set from 20 to 120. The region is then highlighted in gray beneath the posterior, with its value provided in a table.</p>
+
+</body>
+
+</html>
+
