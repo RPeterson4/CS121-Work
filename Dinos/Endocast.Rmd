@@ -5,7 +5,7 @@
 <center>
 <figure>
   <img src="http://upload.wikimedia.org/wikipedia/commons/b/be/Tyrannosaurus_brain_aus.jpg" alt="missing" width="350" height="270">
-  <figcaption><b> Fig. 1: An endocast of T-Rex's cranial vault, with a large olfactory bulb on the left</b></figcaption>
+  <figcaption><i> An endocast of T-Rex's cranial vault, with a large olfactory bulb on the left</i></figcaption>
 </figure>
 </center>
 
