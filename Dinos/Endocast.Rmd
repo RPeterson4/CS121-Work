@@ -1,13 +1,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dinosaur researchers often face the difficulty of analyzing skeletal structures without harming them. Moreover, physically examining certain parts of skeletal structures, particularly spaces within cavities, would involve tearing them apart. What to do about this issue?
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introducing the endocast, a 3D recreation of anatomy. By taking high-resolution, computed tomographic (CT) scans of difficult to access dinosaur bones, researchers can reconstruct them with rubber as an endocast for further analysis. Moreover, the CT scan digitizes hundreds of “slices” of the original specimen, forging the endocast layer by layer. Before the CT scan, endocasts were made via “hemisection”, which literally involves cutting the specimen in half to get a better look. Obviously, this method permanently damages the dinosaur’s remains, and does not provide the level of detail that a CT scan reveals. Recently, researchers have used two millimeter thick CT scans to make an endocast of the insides of a Tyrannosaurus Rex skull from the Field Museum of Natural History. 
+<table class="image" align = "right" >
+<caption align="bottom"><i>An endocast of T-Rex's cranial vault, with a large olfactory bulb on the left.</i></caption>
+<tr><td><img src="http://upload.wikimedia.org/wikipedia/commons/b/be/Tyrannosaurus_brain_aus.jpg" width="350" height="270" ></td></tr>
+</table>
 
-<center>
-<figure>
-  <img src="http://upload.wikimedia.org/wikipedia/commons/b/be/Tyrannosaurus_brain_aus.jpg" alt="missing" width="350" height="270">
-  <figcaption><i> An endocast of T-Rex's cranial vault, with a large olfactory bulb on the left</i></figcaption>
-</figure>
-</center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Introducing the endocast, a 3D recreation of anatomy. By taking high-resolution, computed tomographic (CT) scans of difficult to access dinosaur bones, researchers can reconstruct them with rubber as an endocast for further analysis. Moreover, the CT scan digitizes hundreds of “slices” of the original specimen, forging the endocast layer by layer. Before the CT scan, endocasts were made via “hemisection”, which literally involves cutting the specimen in half to get a better look. Obviously, this method permanently damages the dinosaur’s remains, and does not provide the level of detail that a CT scan reveals. Recently, researchers have used two millimeter thick CT scans to make an endocast of the insides of a Tyrannosaurus Rex skull from the Field Museum of Natural History. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This endocast has provided some new perspective on the anatomy of T-Rex’s brain. It had an abducens nerve, which helps control eye movement. Yet, the endocast revealed no connection between the abducens nerve and the pituitary fossa, implying no connection to the pituitary gland. As this gland secretes hormones necessary for neural development, the lack of a link to the abducens nerve would make it exceptionally difficult for the nerve to grow. The researcher of this endocast described this finding as “disturbing”.  
 
