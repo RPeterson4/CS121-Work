@@ -1,6 +1,6 @@
 <img src="http://www.arthurx.org/Thomas_Bayes/Thomas_Bayes_Grafure.gif" width="200" height="200" align="left" style="margin-right: 20px;margin-bottom: 20px;">
 
-Assume we have two random variables, $X$ and $Y$. Bayes's theorem states that the conditional probability of $Y|X$ can be derived from the reverse conditional $X|Y$:
+Assume we have two random variables, $X$ and $Y$. Bayes's theorem states that the conditional probability $Y|X$ can be derived from the reverse conditional $X|Y$:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$
 
