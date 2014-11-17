@@ -4,7 +4,7 @@ Assume we have two random variables, $X$ and $Y$. Bayes's theorem states that th
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$P(Y|X) = \frac{P(X|Y)P(Y)}{P(X)}$
 
-We can extend this theorem to probability distributions. In Bayesian statistics, we have three probability distributions of interest: the data, the prior, and the posterior. Again consider $X$ and $Y$:
+We can extend this theorem to probability distributions. In Bayesian statistics, we have three probability distributions to consider: the data, the prior, and the posterior. Again consider $X$ and $Y$:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Data:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $X|Y = y$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>modeled by</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $f(x|y)$
 
