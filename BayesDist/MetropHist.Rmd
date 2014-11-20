@@ -1,1 +1,1 @@
-<img src="http://i.imgur.com/3QOJAe8.png" width="1000" height="750" align="left"> 
+How does the distribution of acres that Ross worked on change as n increases? Which sigma approximates the distribution with the smallest sample? Click "Show target density" to put the target density on the histogram.
