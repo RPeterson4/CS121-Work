@@ -1,6 +1,6 @@
 <img src="http://images1.wikia.nocookie.net/__cb20120728230149/smallville/images/8/89/Metropolis2013.png" width="265" height="145" align="left" style="margin-right: 20px;">
 
-In hierarchical Bayesian modeling, the high number of priors often makes deriving the posterior density, $f(y|x)$, difficult. A possible solution is a Markov chain Monte Carlo (MCMC) simulation. For $Y$, a set of prior parameters, and $X=x$, an observed set of data, MCMC involves taking a chain of samples ($y_1,y_2,...,y_n$) from a distribution $\neq f(y|x)$, whereby the samples are dependent upon one another (i.e., $y_{i+1}$ depends on $y_i$). Because the time spent at each $y$ value is proportional to $f(y|x)$, the chain can approximate the posterior $f(y|x)$, also known as the target density.
+In hierarchical Bayesian modeling, the high number of priors can make deriving the posterior density, $f(y|x)$, difficult. A possible solution is a Markov chain Monte Carlo (MCMC) simulation. For $Y$, a set of prior parameters, and $X=x$, an observed set of data, MCMC involves taking a chain of samples ($y_1,y_2,...,y_n$) from a distribution $\neq f(y|x)$, whereby the samples are dependent upon one another (i.e., $y_{i+1}$ depends on $y_i$). Because the time spent at each $y$ value is proportional to $f(y|x)$, the chain can approximate the posterior $f(y|x)$, also known as the target density.
 
 The chain of $y$ values then takes on the shape of a random sample from $f(y|x)$. Once this chain is large enough, we can use it approximate the posterior density of $f(y|x)$.
 
