@@ -6,7 +6,6 @@ p.big {
 </style>
 </head>
 <br>
-<br>
 <p class="big">
 <font size="40"><a href="https://rlpeterson42.shinyapps.io/BayesApp/">If this weblink has
 "glimmer" in it, please click this one!</a></font>
