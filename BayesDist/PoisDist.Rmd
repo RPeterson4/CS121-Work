@@ -1,1 +1,17 @@
-<img src="http://i.imgur.com/Z6DAmSn.png" width="1000" height="750" align="left"> 
+<img src="http://www.clker.com/cliparts/a/7/n/G/p/e/goldfish.svg" width="250" height="240" align="left" style="margin-right: 20px;">
+
+The Poisson Distribution is often used for modeling the number of occurrences of an event, $X$, over an interval of time, whereby $\lambda$ is the expected number of occurrences over the interval. For $X$, the Poisson Distribution is:
+
+<center>$X \sim Pois(\lambda)$</center>
+
+whereby $X$ has the corresponding probability mass function:
+
+<center> $f(x|\lambda) = \frac{e^{\lambda}\lambda^x}{x!}$ &nbsp;&nbsp; <b>for</b> &nbsp;&nbsp; $x=0,1,2...$ &nbsp;&nbsp; <b>and</b> &nbsp;&nbsp; $\lambda>0$</center>
+
+The mean and variance for $X$ can be calculated as:
+
+<center> $E(X) = Var(X) = \lambda$ </center>
+
+Notice that because $Var(X) = \lambda$, the distribution becomes more spread out as $\lambda$ increases. This is because the more occurrences we expect, the wider our range becomes of possible occurrences. 
+
+Here, the x-axis has been set from 0 to 20 while $\lambda$ ranges from 0 to 10:
