@@ -1,1 +1,1 @@
-Simulations in simple settings have shown that the ideal Metropolis algorithm produces a chain that only accepts 23.4% of its proposed moves. Which value of sigma produces an acceptance rate closest to 23.4%?
+Simulations in simple settings have shown that the ideal Metropolis algorithm produces a chain that only accepts 23.4% of its proposed moves. Which value of $\sigma$ produces an acceptance rate closest to 23.4%?
