@@ -1,3 +1,1 @@
-<a href="http://i.imgur.com/VysOLfH.png" target="_blank">Link to Metropolis Description</a>
-
 Here are the acres that Ross has visited. Click the checkbox "Connect acres visited" to more clearly display the path that Ross has taken. The checkbox "Show rejected acres" displays the acres proposed to Ross that he rejected, highlighted in red.
