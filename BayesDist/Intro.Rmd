@@ -7,8 +7,7 @@ p.big {
 </head>
 <br>
 <p class="big">
-<font size="40"><a href="https://rlpeterson42.shinyapps.io/BayesApp/">If this weblink has
-"glimmer" in it, please click this one!</a></font>
+<font size="40"><a href="https://rlpeterson42.shinyapps.io/BayesApp/">If the current weblink has "glimmer" in it, please click this hyperlink!</a></font>
 </p>
 
 <img src="http://www.arthurx.org/Thomas_Bayes/Thomas_Bayes_Grafure.gif" width="200" height="200" align="left" style="margin-right: 20px;margin-bottom: 20px;">
